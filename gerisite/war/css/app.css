@@ -10,10 +10,13 @@
 		min-height: 45px !important;
 	}
 	.top-bar-section ul li a {
-		color: #444444;
+		color: #333333;
 	}
 	.top-bar .top-bar-section a:HOVER {
 		text-decoration: underline;
+	}
+	.top-bar-section .dropdown li a {
+		color: #111111;
 	}
 }
 
@@ -141,6 +144,13 @@ div.orbit-caption {
 	/* IE8 */
 }
 
+.top-bar-section .dropdown li a {
+	padding: 0px 15px !important;
+	line-height: 45px !important;
+	opacity: 0.8;
+	filter: alpha(opacity =       80); /* For IE8 and earlier */
+}
+
 .rotate_vertical {
 	margin: 0px;
 	z-index: 100;
@@ -151,7 +161,12 @@ div.orbit-caption {
 	transform-origin: right top 0px;
 }
 
-.top-bar-section .dropdown li a {
-	padding: 0px 15px !important;
-	line-height: 45px !important;
+.text-input {
+	border-radius : 20px;
+	margin-top: 10px !important;
+	margin-bottom: 0 !important;
+	padding: 3px !important;
+}
+.searchdata p.margin4 {
+	margin-bottom: 4px;
 }
