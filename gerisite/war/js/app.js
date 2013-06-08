@@ -1,8 +1,14 @@
+/*
+ * Application JS file
+ */ 
+
+//Flag used to determine if search is already shown.
 var searchShown = false;
 
 $(function() {
 	
-	/* ######## lazy load images ######## */
+	/* ######## lazy load slideshow images ######## 
+	 * allows first page to load a little faster. */
 	$("img.lazy").lazyload({
 		container: $("#slideshowContainer")
 	});
@@ -35,17 +41,16 @@ $(function() {
 	hideAll();
 	$home.fadeIn(10);
 
-	// Bind a handler for state
+	// Bind a handler for state using HISTORY plugin
+	//to enable the BACK and FWD browser buttons
 	$.History.bind('', function(state) {
-		// Show apricots tab, hide the other tabs
+		// Show home tab, hide the other tabs
 		hideAll();
 		$home.stop(true, true).fadeIn(200);
 		searchShown = false;
 	});
 
-	// Bind a handler for state: apricots
 	$.History.bind('/about', function(state) {
-		// Show apricots tab, hide the other tabs
 		hideAll();
 		$about.stop(true, true).fadeIn(200);
 		searchShown = false;
@@ -57,7 +62,6 @@ $(function() {
 	});
 	$.History.bind('/products/kurtis', function(state) {
 		hideAll();
-		// $kurtis.stop(true, true).fadeIn(10);
 		$kurtis.load('kurtis.html');
 		$kurtis.stop(true, true).fadeIn(10);
 		searchShown = false;
@@ -88,15 +92,16 @@ $(function() {
 		searchShown = false;
 	});
 
-	/* ######## Search ####### */
+	/* ######## Search site. ####### */
+	// as u type search will run , no enter button
 	$("#filter").keyup(function() {
 
-		// Retrieve the input field text and reset the count to zero
+		// Retrieve the input field text and reset the search items found count to zero
 		var filter = $(this).val(), count = 0;
 
-		if (filter.length == 0) {
+		if (filter.length == 0) { //if nothing entered, do nothing. 
 			return;
-		} else {
+		} else { //show search section 
 			if (searchShown != true) {
 				hideAll();
 				$search.stop(true, true).fadeIn(200);
@@ -104,7 +109,7 @@ $(function() {
 			}
 		}
 
-		// Loop through the comment list
+		// Loop through the total search data 
 		$(".searchdata li").each(function() {
 
 			// If the list item does not contain the text phrase fade it out

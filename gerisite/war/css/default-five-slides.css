@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Rokkitt);
 /*
  * jQuery FlexSlider v1.8
  * http://www.woothemes.com/flexslider/
@@ -144,7 +143,7 @@ html[xmlns] .slides {
 
 .flex-direction-nav .flex-disabled {
 	opacity: .3;
-	filter: alpha(opacity =   30);
+	filter: alpha(opacity =       30);
 	cursor: default;
 }
 
@@ -186,7 +185,7 @@ html[xmlns] .slides {
 }
 
 .flex-caption h3 {
-	font: 26px 'Rokkitt', Georgia, "Times New Roman", Times, serif;
+	font: 16px Georgia, "Times New Roman", Times, serif;
 	font-weight: bold;
 	margin: 0 0 5px;
 	color: white;
@@ -219,7 +218,7 @@ html[xmlns] .slides {
 		margin-right: -.25em;
 		/*for 5 slides*/
 		/* nigel here */
-/* 		width: 20.08%; */
+		/* 		width: 20.08%; */
 		width: 19.5%;
 	}
 	.flexslider .slides img {
@@ -232,5 +231,18 @@ html[xmlns] .slides {
 	}
 	#responsiveFlag {
 		display: block;
+	}
+
+	/* nigel here */
+	.box_rotate_vertical {
+		transform: rotate(-90deg);
+		transform-origin:5% 60%;
+		-ms-transform: rotate(-90deg); /* IE 9 */
+		-ms-transform-origin: 5% 60%; /* IE 9 */
+		-webkit-transform: rotate(-90deg); /* Safari and Chrome */
+		-webkit-transform-origin: 5% 60%; /* Safari and Chrome */
+		-moz-transform: rotate(-90deg); /* FF3.5+ */
+		-moz-transform-origin: 5% 60%; 
+		-o-transform: rotate(-90deg); /* Opera 10.5 */
 	}
 }
