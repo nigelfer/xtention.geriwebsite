@@ -1,0 +1,44 @@
+<!--########## KURTIS page #########-->
+
+<div class="row">
+	<div class="large-12 columns">
+		<h2>Western outfits</h2>
+
+		<div class="section-container vertical-tabs"
+			data-section="vertical-tabs" id="westsection"
+		>
+			<section class="active">
+				<p class="title" data-section-title>
+					<a href="#">Western Dresses in Chiffon<br>,Gorgette &
+						Poplin Lycra<br> with handwork
+					</a>
+				</p>
+				<div class="content" data-section-content>
+					<img src="img/western/8.png" />
+				</div>
+			</section>
+			<section>
+				<p class="title" data-section-title>
+					<a href="#">Western Tops in Chiffon,<br> Georgette & Lace
+					</a>
+				</p>
+				<div class="content" data-section-content>
+					<img class="lazy" src="img/grey.gif"
+						data-original="img/western/7.png"
+					/>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(function() {
+		$('#westsection').foundation('section', 'reflow');
+
+		$("img.lazy").lazyload({
+			container : $("#westsection")
+		});
+
+	});
+</script>

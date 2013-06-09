@@ -68,6 +68,7 @@ $(function() {
 	});
 	$.History.bind('/products/western', function(state) {
 		hideAll();
+		$western.load('western.html');
 		$western.stop(true, true).fadeIn(200);
 		searchShown = false;
 	});

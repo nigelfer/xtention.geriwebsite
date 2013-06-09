@@ -195,6 +195,10 @@ html[xmlns] .slides {
 	font-size: 0;
 	line-height: 0;
 }
+#responsiveFlagW {
+	font-size: 0;
+	line-height: 0;
+}
 
 @media handheld , only screen and (min-width: 320px) {
 	.flex-caption {
@@ -221,6 +225,12 @@ html[xmlns] .slides {
 		/* 		width: 20.08%; */
 		width: 19.5%;
 	}
+	
+	/* nigel here */
+/* 	.2slides { */
+/* 		width: 49% !imporant; */
+/* 	} */
+	
 	.flexslider .slides img {
 		display: block;
 		max-width: 1000px;
@@ -230,6 +240,9 @@ html[xmlns] .slides {
 		padding: 20px 30px;
 	}
 	#responsiveFlag {
+		display: block;
+	}
+	#responsiveFlagW {
 		display: block;
 	}
 

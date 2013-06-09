@@ -1,87 +1,73 @@
-<!-- KURTIS page -->
+<!--########## KURTIS page #########-->
+
 <div class="row">
 	<div class="large-12 columns">
-		<div id="container">
-			<h2>Kurtis</h2>
+		<h2>Kurtis</h2>
 
-			<div class="flexslider">
-				<ul class="slides">
-					<li><img src="img/kurtis/1.png" />
-						<div class="flex-caption box_rotate_vertical">
-							<h3>Indian Kurtis in cotton</h3>
-						</div></li>
-					<li><a href="#"><img src="img/kurtis/2.png" /></a>
-						<div class="flex-caption box_rotate_vertical">
-							<h3>Indian Kurtis in cotton mix</h3>
-						</div></li>
-					<li><img src=img/kurtis/3.png />
-						<div class="flex-caption box_rotate_vertical">
-							<h3>Indian Kurtis in linen</h3>
-						</div></li>
-					<li><img src="img/kurtis/4.png" />
-						<div class="flex-caption box_rotate_vertical">
-							<h3>Designer Kurtis with hand work</h3>
-						</div></li>
-					<li><img src="img/kurtis/5.png" />
-						<div class="flex-caption box_rotate_vertical">
-							<h3>Designer Kurtis with machine work</h3>
-						</div></li>
-				</ul>
-			</div>
+		<div class="section-container vertical-tabs"
+			data-section="vertical-tabs" id="kurtisection"
+		>
+			<section class="active">
+				<p class="title" data-section-title>
+					<a href="#">Indian Kurtis in cotton</a>
+				</p>
+				<div class="content" data-section-content>
+					<img src="img/kurtis/1.png" />
+				</div>
+			</section>
+			<section>
+				<p class="title" data-section-title>
+					<a href="#">Indian Kurtis in cotton mix</a>
+				</p>
+				<div class="content" data-section-content>
+					<img class="lazy" src="img/grey.gif"
+						data-original="img/kurtis/2.png"
+					/>
+				</div>
+			</section>
+			<section>
+				<p class="title" data-section-title>
+					<a href="#">Indian Kurtis in linen</a>
+				</p>
+				<div class="content" data-section-content>
+					<img class="lazy" src="img/grey.gif"
+						data-original="img/kurtis/3.png"
+					/>
+				</div>
+			</section>
+			<section>
+				<p class="title" data-section-title>
+					<a href="#">Designer Kurtis with<br> hand work
+					</a>
+				</p>
+				<div class="content" data-section-content>
+					<img class="lazy" src="img/grey.gif"
+						data-original="img/kurtis/4.png"
+					/>
+				</div>
+			</section>
+			<section>
+				<p class="title" data-section-title>
+					<a href="#">Designer Kurtis with<br> machine work
+					</a>
+				</p>
+				<div class="content" data-section-content>
+					<img class="lazy" src="img/grey.gif"
+						data-original="img/kurtis/5.png"
+					/>
+				</div>
+			</section>
 		</div>
-		<span id="responsiveFlag"></span>
 	</div>
 </div>
 
-<!-- for kwicks slider effect, i.e. diff vertical panel images  -->
-<script src="js/jquery.flexslider-min.js"></script>
-<!-- <script src="js/css3-mediaqueries.js"></script> -->
-<script src="js/kwiks.js"></script>
+<script>
+	$(function() {
+		$('#kurtisection').foundation('section', 'reflow');
 
-<script type="text/javascript">
-	// Hook up the FlexSlider
-	var Main = Main || {};
+		$("img.lazy").lazyload({
+			container : $("#kurtisection")
+		});
 
-	window.responsiveFlag = jQuery('#responsiveFlag').css('display');
-	Main.gallery = new Gallery();
-
-	jQuery(window).resize(function() {
-		Main.gallery.update();
 	});
-
-	function Gallery() {
-		var self = this, container = jQuery('.flexslider'), clone = container
-				.clone(false);
-
-		this.init = function() {
-			if (responsiveFlag == 'block') {
-				var slides = container.find('.slides');
-
-				slides.kwicks({
-					sticky : true,
-					max : 700,
-					spacing : 5
-				}).find('li > a').click(function() {
-					return false;
-				});
-			} else {
-				container.flexslider();
-			}
-		}
-		this.update = function() {
-			var currentState = jQuery('#responsiveFlag').css('display');
-
-			if (responsiveFlag != currentState) {
-
-				responsiveFlag = currentState;
-				container.replaceWith(clone);
-				container = clone;
-				clone = container.clone(false);
-
-				this.init();
-			}
-		}
-
-		this.init();
-	}
 </script>

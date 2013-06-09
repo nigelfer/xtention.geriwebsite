@@ -138,3 +138,7 @@ div.orbit-caption {
 .searchdata p.margin4 {
 	margin-bottom: 4px;
 }
+
+section .title{
+	font-weight: bold;
+}
