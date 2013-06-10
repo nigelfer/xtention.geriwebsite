@@ -2930,7 +2930,9 @@ form.custom {
       left: auto;
       right: 0; }
       .top-bar-section ul.right li .dropdown li .dropdown {
-        right: 100%; } }
+        right: 100%; } 
+        }
+        
 @-webkit-keyframes rotate {
   from {
     -webkit-transform: rotate(0deg); }

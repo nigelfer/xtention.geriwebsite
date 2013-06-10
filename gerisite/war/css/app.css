@@ -3,10 +3,8 @@
 */
 
 /* for Desktops */
-@media screen and (max-width: 2000px) and (min-width: 600px) {
-
-/* 	top nav menu related  */
-
+@media screen and (max-width: 2000px) and (min-width: 940px) {
+	/* 	top nav menu related  */
 	.top-bar-section li a {
 		min-height: 45px !important;
 	}
@@ -22,9 +20,8 @@
 }
 
 /* tablets or mobile specific  */
-@media screen and (max-width: 599px) and (min-width: 50px) {
-
-/* 	top nav menu related  
+@media screen and (max-width: 939px) and (min-width: 50px) {
+	/* 	top nav menu related  
 	we want to be large enought to be clikable with finger 
 	and border around make it look nice. */
 	.top-bar-section li a {
@@ -126,19 +123,20 @@ div.orbit-caption {
 	padding: 0px 15px !important;
 	line-height: 45px !important;
 	opacity: 0.8;
-	filter: alpha(opacity =       80); /* For IE8 and earlier */
+	filter: alpha(opacity =         80); /* For IE8 and earlier */
 }
 
 .text-input {
-	border-radius : 20px;
+	border-radius: 20px;
 	margin-top: 10px !important;
 	margin-bottom: 0 !important;
 	padding: 3px !important;
 }
+
 .searchdata p.margin4 {
 	margin-bottom: 4px;
 }
 
-section .title{
+section .title {
 	font-weight: bold;
 }

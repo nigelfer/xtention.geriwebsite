@@ -127,6 +127,7 @@
         }
 
         region.addClass('active');
+        //region.addClass('active').fadeOut(10).fadeIn(500);
 
         if (prev_active_section.length > 0) {
           prev_active_section

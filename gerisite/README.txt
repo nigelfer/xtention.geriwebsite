@@ -9,7 +9,8 @@ pages or use components that do the same internally.
 Credits 
 -------
 1. JQuery http://jquery.com/ for manipulating the DOM. 
-2. Used foundation for the site Layout, slideshow, menu. http://foundation.zurb.com/
+2. Used foundation for the site Layout, slideshow, menu, accordion.
+ http://foundation.zurb.com/
 3. Kwicks http://webcodebuilder.com/responsive-jquery-plugin-flexslider-feat-kwiks/
  is used for the responsive image slider
 4. Lazyload plugin http://www.appelsiini.net/projects/lazyload to lazily load images
