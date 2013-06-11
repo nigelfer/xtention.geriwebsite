@@ -93,12 +93,6 @@ div.large-3:nth-child(1)>h1:nth-child(1) {
 	text-align: center;
 }
 
-.pg_footer {
-	font-color: gray;
-	color: graytext;
-	font-size: 0.7em;
-}
-
 .back_purple h1 {
 	margin-bottom: 5px !important;
 }
@@ -123,7 +117,7 @@ div.orbit-caption {
 	padding: 0px 15px !important;
 	line-height: 45px !important;
 	opacity: 0.8;
-	filter: alpha(opacity =         80); /* For IE8 and earlier */
+	filter: alpha(opacity =           80); /* For IE8 and earlier */
 }
 
 .text-input {
@@ -131,6 +125,9 @@ div.orbit-caption {
 	margin-top: 10px !important;
 	margin-bottom: 0 !important;
 	padding: 3px !important;
+	padding-left: 15px !important;
+	padding-right: 10px !important;
+	width: 80%;
 }
 
 .searchdata p.margin4 {
@@ -140,3 +137,59 @@ div.orbit-caption {
 section .title {
 	font-weight: bold;
 }
+
+.button {
+	background-color: #444444 !important;
+}
+
+.button-group {
+	float: right !important;
+}
+
+#fbimg {
+	margin-top: 10px;
+}
+
+/*** footer specific */
+footer {
+	border-top: 3px solid #EDEAE5;
+	font-weight: bold;
+	font-weight: .8em;
+	color: gray;
+}
+
+.footertext {
+	padding-top: 2%;
+	font-size: .8em;
+}
+
+.footerLeft {
+	padding-left: 30%;
+	float : right;
+	border-right: 1px solid #fff;
+	padding-top: 2%;
+	width: 100%;
+}
+
+.footerLeft ul li {
+	display: inline;
+	list-style: none;
+	margin-right: 2%;
+	padding-right: 10px;
+}
+.footerLeft ul {
+	margin-bottom: 5px;
+}
+
+.footerLeft ul li a {
+	font-size: .8em;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+.footerLeft ul li a:hover {
+	text-decoration: underline;
+}
+
+v /* end footer */

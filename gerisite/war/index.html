@@ -29,46 +29,50 @@ you may add app.css to use for your overrides if you like. -->
 					<a href="index.html"><img src="img/logo_white1.png" /></a>
 				</h1>
 			</div>
-			<div class="large-6 columns">
+			<div class="large-9 columns">
+
+				<div class="row">
+					<div class="large-5 large-offset-4 columns">
+						<input type="text" class="text-input" id="filter" value=""
+							placeholder="Type to search.."
+						/> <span id="filter-count"></span>
+					</div>
+					<div class="large-3 columns">
+						<a href="https://www.facebook.com/pages/Xtension/337105089720817"
+							target="_blank"
+						> <img id="fbimg" src="img/facebook_logo.jpg"></img>
+						</a>
+					</div>
+
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+						<nav class="top-bar">
+							<ul class="title-area">
+								<!--Title Area -->
+								<li class="name"></li>
+								<!--Remove the class 
+	 "menu-icon  " to get rid of menu icon  . Take out   "Menu  " to just have icon alone -->
+								<li class="toggle-topbar menu-icon"><a href="#"> <span>
+									</span>
+								</a></li>
+							</ul>
+							<section class="top-bar-section">
+								<!--Left Nav Section -->
+								<ul class="left">
+									<li><a href="#/products/kurtis">KURTIS</a></li>
+									<li><a href="#/products/western">WESTERN WEAR</a></li>
+									<li><a href="#/products/tunics">TUNICS</a></li>
+									<li><a href="#/products/tshirts">T-SHIRTS</a></li>
+									<li><a href="#/products/jewellery">Jewellery</a></li>
+								</ul>
+							</section>
+						</nav>
+					</div>
+				</div>
 
 				<!--####### MENU ################-->
 
-				<nav class="top-bar">
-					<ul class="title-area">
-						<!--Title Area -->
-						<li class="name"></li>
-						<!--Remove the class 
-	 "menu-icon  " to get rid of menu icon  . Take out   "Menu  " to just have icon alone -->
-						<li class="toggle-topbar menu-icon"><a href="#"> <span>
-							</span>
-						</a></li>
-					</ul>
-					<section class="top-bar-section">
-						<!--Left Nav Section -->
-						<ul class="left">
-							<!-- <li class  ="divider"> </li>-->
-							<li><a href="">HOME</a></li>
-							<li><a href="#/about">ABOUT US</a></li>
-							<li class="has-dropdown"><a href="#/products">PRODUCTS</a>
-								<ul class="dropdown">
-									<li><a href="#/products/kurtis">Kurtis</a></li>
-									<li><a href="#/products/western">WESTERN WEAR</a></li>
-									<li><a href="#/products/tunics">Tunics in Georgette &
-											Poplin Lycra</a></li>
-									<li><a href="#/products/tshirts">T-Shirts in 4 way
-											stretch</a></li>
-									<li><a href="#/products/jewellery">Jewellery – Semi
-											Precious Stones</a></li>
-								</ul></li>
-							<li><a href="#/contact">CONTACT US</a>
-						</ul>
-					</section>
-				</nav>
-			</div>
-			<div class="large-3 columns">
-				<input type="text" class="text-input" id="filter" value=""
-					placeholder="Type to search.."
-				/> <span id="filter-count"></span>
 
 			</div>
 		</div>
@@ -168,18 +172,20 @@ you may add app.css to use for your overrides if you like. -->
 
 		<footer class="row">
 			<div class="large-12 columns">
-				<hr />
-				<div class="row pg_footer">
-					<div class="large-9 columns">
-						<p>Note: this website is best viewed in IE9+ or the latest
-							versions of Chrome & Firefox. On dektop or mobile too.</p>
-					</div>
-					<div class="large-3 columns">
-						<ul class="inline-list right ">
-							<li><a href="#">Wesite credits</a></li>
-							<li><a href="#">Site map</a></li>
+				<div class="large-5 columns">
+					<p class="footertext">Note: this website is best viewed in IE9+ or the latest
+						versions of Chrome & Firefox. On dektop or mobile too.</p>
+				</div>
+				<div class="large-7 columns">
+					<div class="footerLeft">
+						<ul>
+							<li><a href="">HOME</a></li>
+							<li><a href="#/about">ABOUT US</a></li>
+							<li><a href="#/contact">CONTACT US</a></li>
+							<li><a href="#/credits">SITE-DESIGN</a></li>
 						</ul>
 					</div>
+					
 				</div>
 			</div>
 		</footer>
@@ -354,12 +360,12 @@ you may add app.css to use for your overrides if you like. -->
 				+ ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery')
 				+ '.js><\/script>')
 	</script>
-<!-- 	<script src="js/foundation.min.js"></script> -->
+	<!-- 	<script src="js/foundation.min.js"></script> -->
 
-		<script src="js/foundation/foundation.js"></script>
-		<script src="js/foundation/foundation.orbit.js"></script>
-		<script src="js/foundation/foundation.topbar.js"></script>
-		<script src="js/foundation/foundation.section.js"></script>
+	<script src="js/foundation/foundation.js"></script>
+	<script src="js/foundation/foundation.orbit.js"></script>
+	<script src="js/foundation/foundation.topbar.js"></script>
+	<script src="js/foundation/foundation.section.js"></script>
 
 	<!-- 	<script src="js/foundation/foundation.clearing.js"></script> -->
 	<!-- 	<script src="js/foundation/foundation.cookie.js"></script> -->
