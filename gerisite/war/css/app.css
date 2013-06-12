@@ -31,10 +31,50 @@
 		border-width: 1px !important;
 		min-height: 50px !important;
 	}
+	.footerLeft {
+		padding-left: 2% !important;
+		float: right;
+		padding-top: 2%;
+		width: 100%;
+	}
+	.footerLeft ul li a {
+		border-style: solid;
+		border-width: 1px;
+		cursor: pointer;
+		font-family: inherit;
+		font-weight: bold;
+		line-height: 1;
+		margin: 0 0 1.25em;
+		position: relative;
+		text-decoration: none;
+		text-align: center;
+		display: inline-block;
+		padding-top: 0.75em;
+		padding-right: 1.5em;
+		padding-bottom: 0.8125em;
+		padding-left: 1.5em;
+		font-size: 1em;
+		background-color: #444444;
+		border-color: #999999;
+		color: white !important;
+	}
+	.footerLeft ul li {
+		border-style: none !important;
+		padding-right: 2px !important;
+	}
+	.footerLeft ul li a:hover,.footerLeft ul li a:focus {
+		background-color: #777777;
+	}
+	.footerLeft ul li a:hover {
+		text-decoration: none !important;
+	}
+	.mobilenoshow {
+		width: 0px;
+		display: none !important;
+	}
 }
 
 .top-bar,#___gcse_0 {
-	margin-top: 10px !important;
 	margin-bottom: 10px !important;
 }
 
@@ -42,7 +82,7 @@ div.large-3:nth-child(1)>h1:nth-child(1) {
 	margin-top: 4px !important;
 }
 
-#big_purple,.x_purple {
+#big_purple {
 	color: #bb52Ae !important;
 }
 
@@ -117,7 +157,8 @@ div.orbit-caption {
 	padding: 0px 15px !important;
 	line-height: 45px !important;
 	opacity: 0.8;
-	filter: alpha(opacity =           80); /* For IE8 and earlier */
+	filter: alpha(opacity =                         80);
+	/* For IE8 and earlier */
 }
 
 .text-input {
@@ -165,8 +206,7 @@ footer {
 
 .footerLeft {
 	padding-left: 30%;
-	float : right;
-	border-right: 1px solid #fff;
+	float: right;
 	padding-top: 2%;
 	width: 100%;
 }
@@ -176,7 +216,13 @@ footer {
 	list-style: none;
 	margin-right: 2%;
 	padding-right: 10px;
+	border-right: 2px solid #BAB7B2;
 }
+
+.footerLeft>ul:nth-child(1)>li:Last-child {
+	border-style: none !important;
+}
+
 .footerLeft ul {
 	margin-bottom: 5px;
 }
@@ -191,5 +237,16 @@ footer {
 .footerLeft ul li a:hover {
 	text-decoration: underline;
 }
+/* end footer */
+#topbartab {
+	width: 95%;
+	border: none;
+	margin: 0px;
+}
 
-v /* end footer */
+.x_purple {
+	color: #bb52Ae !important;
+	font-size: 3em;
+	font-family: "Edwardian Script ITC", "Brush Script MT", cursive;
+	line-height: 100%;
+}

@@ -13,7 +13,7 @@
 						Poplin Lycra<br> with handwork
 					</a>
 				</p>
-				<div class="content" data-section-content>
+				<div id="imgs" class="content" data-section-content>
 					<img src="img/western/8.png" />
 				</div>
 			</section>
@@ -22,7 +22,7 @@
 					<a href="#">Western Tops in Chiffon,<br> Georgette & Lace
 					</a>
 				</p>
-				<div class="content" data-section-content>
+				<div id="imgs" class="content" data-section-content>
 					<img class="lazy" src="img/grey.gif"
 						data-original="img/western/7.png"
 					/>
@@ -38,6 +38,13 @@
 
 		$("img.lazy").lazyload({
 			container : $("#westsection")
+		});
+
+		/* ## animate panels */
+		$title = $('.section-container section .title');
+		$title.click(function() {
+			//$img1 = $(this).parent('.active').$('.content');
+			$(this).parent('.active').$('#imgs').fadeIn('slow');
 		});
 
 	});

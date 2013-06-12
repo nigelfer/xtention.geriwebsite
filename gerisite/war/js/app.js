@@ -1,18 +1,20 @@
 /*
  * Application JS file
- */ 
+ */
 
 //Flag used to determine if search is already shown.
 var searchShown = false;
 
 $(function() {
-	
-	/* ######## lazy load slideshow images ######## 
-	 * allows first page to load a little faster. */
+
+	/*
+	 * ######## lazy load slideshow images ######## allows first page to load a
+	 * little faster.
+	 */
 	$("img.lazy").lazyload({
-		container: $("#slideshowContainer")
+		container : $("#slideshowContainer")
 	});
-	
+
 	/* ######## hiding and showing the Different menu sections ######## */
 	$home = $('#home');
 	$about = $('#about');
@@ -42,7 +44,7 @@ $(function() {
 	$home.fadeIn(10);
 
 	// Bind a handler for state using HISTORY plugin
-	//to enable the BACK and FWD browser buttons
+	// to enable the BACK and FWD browser buttons
 	$.History.bind('', function(state) {
 		// Show home tab, hide the other tabs
 		hideAll();
@@ -89,6 +91,7 @@ $(function() {
 	});
 	$.History.bind('/contact', function(state) {
 		hideAll();
+		$contact.load('contact.html');
 		$contact.stop(true, true).fadeIn(200);
 		searchShown = false;
 	});
@@ -97,12 +100,13 @@ $(function() {
 	// as u type search will run , no enter button
 	$("#filter").keyup(function() {
 
-		// Retrieve the input field text and reset the search items found count to zero
+		// Retrieve the input field text and reset the search items found count
+		// to zero
 		var filter = $(this).val(), count = 0;
 
-		if (filter.length == 0) { //if nothing entered, do nothing. 
+		if (filter.length == 0) { // if nothing entered, do nothing.
 			return;
-		} else { //show search section 
+		} else { // show search section
 			if (searchShown != true) {
 				hideAll();
 				$search.stop(true, true).fadeIn(200);
@@ -110,7 +114,7 @@ $(function() {
 			}
 		}
 
-		// Loop through the total search data 
+		// Loop through the total search data
 		$(".searchdata li").each(function() {
 
 			// If the list item does not contain the text phrase fade it out
@@ -129,4 +133,24 @@ $(function() {
 		var numberItems = count;
 		$("#filter-count").text(count + " Search results");
 	});
+
 });
+
+// for IE8
+// function adjustStyle(width) {
+// width = parseInt(width);
+// if (width < 701) {
+// $("#size-stylesheet").attr("href", "css/narrow.css");
+// } else if ((width >= 701) && (width < 900)) {
+// $("#size-stylesheet").attr("href", "css/medium.css");
+// } else {
+// $("#size-stylesheet").attr("href", "css/wide.css");
+// }
+// }
+//
+// $(function() {
+// adjustStyle($(this).width());
+// $(window).resize(function() {
+// adjustStyle($(this).width());
+// });
+// });
