@@ -10,6 +10,7 @@
 	}
 	.top-bar-section ul li a {
 		color: #333333;
+		font-size: 0.9em !important;
 	}
 	.top-bar .top-bar-section a:HOVER {
 		text-decoration: underline;
@@ -71,6 +72,12 @@
 	.mobilenoshow {
 		width: 0px;
 		display: none !important;
+	}
+	#content {
+		padding-bottom: 110px !important; /* Height of the footer element */
+	}
+	#footer {
+		height: 110px !important;
 	}
 }
 
@@ -157,7 +164,7 @@ div.orbit-caption {
 	padding: 0px 15px !important;
 	line-height: 45px !important;
 	opacity: 0.8;
-	filter: alpha(opacity =                         80);
+	filter: alpha(opacity =                           80);
 	/* For IE8 and earlier */
 }
 
@@ -189,6 +196,9 @@ section .title {
 
 #fbimg {
 	margin-top: 10px;
+	font-size: 28px;
+	position: relative;
+	top: 10px;
 }
 
 /*** footer specific */
@@ -201,7 +211,9 @@ footer {
 
 .footertext {
 	padding-top: 2%;
-	font-size: .8em;
+	font-size: .75em;
+	margin: 0px !important;
+/* 	line-height: 0.8em; */
 }
 
 .footerLeft {
@@ -228,10 +240,10 @@ footer {
 }
 
 .footerLeft ul li a {
-	font-size: .8em;
+	font-size: .75em;
 	text-decoration: none;
-	font-weight: bold;
-	color: black;
+/* 	font-weight: bold; */
+	color: #222222;
 }
 
 .footerLeft ul li a:hover {
@@ -239,7 +251,7 @@ footer {
 }
 /* end footer */
 #topbartab {
-	width: 95%;
+	width: 100%;
 	border: none;
 	margin: 0px;
 }
@@ -249,4 +261,51 @@ footer {
 	font-size: 3em;
 	font-family: "Edwardian Script ITC", "Brush Script MT", cursive;
 	line-height: 100%;
+}
+
+/***** sticky footer *****/
+html,body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#wrapper {
+	min-height: 99.9%;
+	position: relative;
+}
+/* #header { */
+/* 	padding:10px;	 */
+/* } */
+#content {
+	/* 	padding:10px; */
+	padding-bottom: 55px; /* Height of the footer element */
+}
+
+#footer {
+	height: 55px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+/***** sticky footer End *****/
+
+.contact {
+	width: 90%;
+	border-style: none;
+	text-align: center;
+	font-weight: bold;
+}
+
+.contact td.header {
+	font-size: 1.5em;
+/* 	background: #f2f2f2; */
+}
+
+.contact td {
+/* 	background: #f2f2f2; */
+}
+
+.contact td address {
+	font-weight: normal !important;
 }

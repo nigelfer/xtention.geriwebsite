@@ -2,7 +2,7 @@
 
 <div class="row">
 	<div class="large-12 columns">
-		<h2>Western outfits</h2>
+<!-- 		<h2>Western outfits</h2> -->
 
 		<div class="section-container vertical-tabs"
 			data-section="vertical-tabs" id="westsection"
@@ -44,7 +44,7 @@
 		$title = $('.section-container section .title');
 		$title.click(function() {
 			//$img1 = $(this).parent('.active').$('.content');
-			$(this).parent('.active').$('#imgs').fadeIn('slow');
+			$(this).parent().$('#imgs').hide().slideDown('slow');
 		});
 
 	});

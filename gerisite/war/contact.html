@@ -1,52 +1,108 @@
 <!--########## CONTACT page #########-->
 
-<br>
-<div class="row">
-	<div class="large-4 columns">
-		<table>
-			<tr>
-				<td>PHONE</td>
-			</tr>
-			<tr>
-				<td>+91 98333 88608 (India)</td>
-			</tr>
-		</table>
-	</div>
-	<div class="large-4 columns">
-		<table>
-			<tr>
-				<td>EMAIL</td>
-			</tr>
-			<tr>
-				<td><a href="mailto:xtension.enterprises@gmail.com">xtension.enterprises@gmail.com</a>></td>
-			</tr>
-		</table>
-	</div>
-	<div class="large-4 columns">
-		<table>
-			<tr>
-				<td>icon</td>
-			</tr>
-			<tr>
-				<td><a href="##">Visit us on Facebook</a></td>
-			</tr>
-		</table>
-	</div>
-</div>
+<link rel="stylesheet" href="css/general_foundicons.css">
+<!--[if lt IE 8]>
+    <link rel="stylesheet" href="css/general_foundicons_ie7.css">
+<![endif]-->
+<style>
+[class*="foundicon-"]:after {
+	position: relative;
+	top: -8px;
+	left: 10px;
+	color: #888;
+	font-size: 60%;
+	font-style: normal;
+}
 
-<div class="row">
-	<div class="large-4 columns">
-		<table>
-			<tr>
-				<td>ADDRESS</td>
-			</tr>
-			<tr>
-				<td>Shop No.3, Abhishek Apts ,(Next to Vijay Sales) S.V. Road,
-					Irla Bridge ,Andheri (W) Mumbai 400 058, India</td>
-			</tr>
-		</table>
-	</div>
-	<div class="large-8 columns">
-		Map....
+.foundicon-phone:after {
+	content: "Phone";
+}
+
+.foundicon-mail:after {
+	content: "E-mail";
+}
+
+.fb:after {
+	content: "Facebook";
+	position: relative;
+	top: -8px;
+	left: 10px;
+	color: #888;
+	font-size: 60%;
+	font-style: normal;
+}
+
+.foundicon-location:after {
+	content: "Address";
+}
+</style>
+
+<br>
+<div class="row ">
+	<div class="large-12 columns">
+		<h2>Contact us</h2>
+		<div class="row">
+			<div class="large-4 columns">
+				<table class="contact">
+					<tr class="header">
+						<td><i id="fbimg" class="foundicon-phone"></i></td>
+					</tr>
+					<tr>
+						<td><a href="tel:+919833388608">(+91) 98333 88608 - India
+								Number</a></td>
+					</tr>
+				</table>
+			</div>
+			<div class="large-4 columns">
+				<table class="contact">
+					<tr class="header">
+						<td><i id="fbimg" class="foundicon-mail"></i></td>
+					</tr>
+					<tr>
+						<td><span data-tooltip data-options="disable-for-touch:false"
+							class="has-tip tip-bottom" title="Click to send us an email"
+						> <a
+								href="mailto:xtension.enterprises@gmail.com?subject=Xtension%20Website"
+							>Xtension Enterprises</a>
+						</span></td>
+					</tr>
+				</table>
+			</div>
+			<div class="large-4 columns">
+				<table class="contact">
+					<tr class="header">
+						<td><i id="fbimg" class="Socialfoundicon-facebook fb"></i></td>
+					</tr>
+					<tr>
+						<td><a href="##">Visit us on Facebook</a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="large-4 columns">
+				<table class="contact">
+					<tr class="header">
+						<td><i id="fbimg" class="foundicon-location"></i></td>
+					</tr>
+					<tr>
+						<td>
+							<address>
+								Shop No.3, Abhishek Apts,<br> (Next to Vijay Sales)
+								S.V.Road,<br> Irla Bridge ,Andheri(W)<br> Mumbai
+								400058, India
+							</address>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="large-8 columns">
+				<iframe
+					src="https://mapsengine.google.com/map/edit?mid=zp98qNAWQcxk.kGiAyK6HBf-c"
+					 width="95%" height="450px"
+				> Map of our location in india. </iframe>
+			</div>
+		</div>
 	</div>
 </div>

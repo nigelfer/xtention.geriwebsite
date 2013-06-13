@@ -14,330 +14,354 @@ you may add app.css to use for your overrides if you like. -->
 
 <link rel="stylesheet" href="css/normalize.css" />
 <link rel="stylesheet" href="css/foundation.css" />
+<link rel="stylesheet" href="css/social_foundicons.css">
+<!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/social_foundicons_ie7.css">
+<![endif]-->
+
+<style type="text/css">
+[class*="Socialfoundicon-"]:before {
+	font-family: "SocialFoundicons" !important;
+}
+</style>
 
 <!-- Application CSS -->
 <link rel="stylesheet" href="css/app.css" />
 
 </head>
 <body>
-	<!--####### body content here ################-->
+	<!--####### MENU ################-->
 
-	<div class="row">
-		<div id="main_head_row">
-			<div class="large-3 columns">
-				<h1>
-					<a href="index.html"><img src="img/logo_white1.png" /></a>
-				</h1>
-			</div>
-			<div class="large-9 columns">
+	<div id="wrapper">
 
-				<div class="row">
-					<div class="large-8 large-offset-4 columns">
-						<table id="topbartab">
-							<tr>
-								<td style="width: 65%"><input type="text"
-									class="text-input" id="filter" value=""
-									placeholder="Type to search.." /> <span id="filter-count"></span></td>
-								<td style="width: 25%"><a
-									href="https://www.facebook.com/pages/Xtension/337105089720817"
-									target="_blank"> <img id="fbimg"
-										src="img/facebook_logo.jpg"></img>
-								</a></td>
-							</tr>
-						</table>
-					</div>
+		<div id="header" class="row">
+			<div id="main_head_row">
+				<div class="large-3 columns">
+					<h1>
+						<a href="index.html"><img src="img/logo_white1.png" /></a>
+					</h1>
 				</div>
+				<div class="large-9 columns">
+
+					<div class="row">
+						<div class="large-10 large-offset-2 columns">
+							<table id="topbartab">
+								<tr>
+									<td style="width: 20%;"><span id="filter-count"></span></td>
+									<td style="width: 60%;"><input type="text"
+										class="text-input" id="filter" value=""
+										placeholder="Type to search.." /></td>
+									<td style="width: 15%;"><a
+										href="https://www.facebook.com/pages/Xtension/337105089720817"
+										target="_blank"> <span data-tooltip
+											data-options="disable-for-touch:false"
+											class="has-tip tip-bottom" title="Visit our facebook page">
+												<i id="fbimg" class="Socialfoundicon-facebook"></i> <!--<img id="fbimg" src="img/facebook_logo.jpg"></img> -->
+										</span>
+									</a></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-12 columns">
+							<nav class="top-bar">
+								<ul class="title-area">
+									<!--Title Area -->
+									<li class="name"></li>
+									<!--Remove the class 
+	 "menu-icon  " to get rid of menu icon  . Take out   "Menu  " to just have icon alone -->
+									<li class="toggle-topbar menu-icon"><a href="#"> <span>Menu
+										</span>
+									</a></li>
+								</ul>
+								<section class="top-bar-section">
+									<!--Left Nav Section -->
+									<ul class="left">
+										<li><a href="#/products/kurtis">KURTIS</a></li>
+										<li><a href="#/products/western">WESTERN WEAR</a></li>
+										<li><a href="#/products/tunics">TUNICS</a></li>
+										<li><a href="#/products/tshirts">T-SHIRTS</a></li>
+										<li><a href="#/products/jewellery">Jewellery</a></li>
+									</ul>
+								</section>
+							</nav>
+						</div>
+					</div>
+
+					<!--####### MENU ################-->
+
+
+				</div>
+			</div>
+		</div>
+		<!--End Header and Nav -->
+
+
+		<!--####### ORBIT Slideshow ################-->
+
+		<div id="content">
+			<div id="home">
 				<div class="row">
 					<div class="large-12 columns">
-						<nav class="top-bar">
-							<ul class="title-area">
-								<!--Title Area -->
-								<li class="name"></li>
-								<!--Remove the class 
-	 "menu-icon  " to get rid of menu icon  . Take out   "Menu  " to just have icon alone -->
-								<li class="toggle-topbar menu-icon"><a href="#"> <span>Menu
-									</span>
-								</a></li>
+						<div class="slideshow-wrapper">
+							<div class="preloader"></div>
+							<ul data-orbit id="slideshowContainer"
+								data-options="timer_speed:10000; resume_on_mouseout: true;">
+								<li><img src="img/slideshow/1.png" /> <!-- IMages LAZY loaded -->
+									<div class="orbit-caption">Indian Kurtis in Cotton</div></li>
+								<li><img class="lazy" src="img/grey.gif"
+									data-original="img/slideshow/6.png" />
+									<div class="orbit-caption">Designer Kurtis with hand work</div></li>
+								<li><img class="lazy" src="img/grey.gif"
+									data-original="img/slideshow/7.png" />
+									<div class="orbit-caption">Western Tops in Chiffon ,
+										Georgette & Lace</div></li>
+								<li><img class="lazy" src="img/grey.gif"
+									data-original="img/slideshow/9.png" />
+									<div class="orbit-caption"></div></li>
+								<li><img class="lazy" src="img/grey.gif"
+									data-original="img/slideshow/13.png" />
+									<div class="orbit-caption">Jewellery – Semi Precious
+										Stones</div></li>
 							</ul>
-							<section class="top-bar-section">
-								<!--Left Nav Section -->
-								<ul class="left">
-									<li><a href="#/products/kurtis">KURTIS</a></li>
-									<li><a href="#/products/western">WESTERN WEAR</a></li>
-									<li><a href="#/products/tunics">TUNICS</a></li>
-									<li><a href="#/products/tshirts">T-SHIRTS</a></li>
-									<li><a href="#/products/jewellery">Jewellery</a></li>
-								</ul>
-							</section>
-						</nav>
+						</div>
 					</div>
 				</div>
 
-				<!--####### MENU ################-->
+				<!--####### BIG in fashion ################-->
 
+				<div class="row back_black align_right">
+					<div class="large-6 columns">
+						<h1 class="color_white inline auto_margin">BIG</h1>
+						<span>&nbsp;</span>
+						<h1 class="quote inline auto_margin">in</h1>
+						<span>&nbsp;</span>
+						<h1 class="color_white inline auto_margin">FASHION</h1>
+					</div>
+					<div class="large-6 columns">
+						<p class="color_white align_left auto_margin">To be BIG in
+							Fashion and the preferred choice for customers in the domestic
+							and international markets</p>
+					</div>
+				</div>
+
+				<!--####### MISSION etc ################-->
+
+				<br>
+				<div class="row">
+					<div class="large-4 columns">
+						<h4>Mission</h4>
+						<ul type="square">
+							<li>Specialize in PLUS sizes</li>
+							<li>Be a market leader in value retailing</li>
+							<li>Provide fashionable products at affordable prices</li>
+							<li>Maintain the best quality standards</li>
+							<li>Be innovative, cost effective and globally competitive</li>
+							<li>Exceed our customers’ expectations</li>
+						</ul>
+
+					</div>
+					<div class="large-5 columns">
+						<h4>The Company</h4>
+						<p>XTENSION, our retail outlet started in December 2012 for
+							regular and PLUS size women who like stylish, trendy and
+							comfortable clothing.</p>
+						<p>While our retail space is fairly new, we have been in the
+							garment industry for the last 20 years and have done work for
+							quite a few fashion houses in Europe and the Gulf. We have also
+							done work for large well known retail outlets in India.</p>
+					</div>
+					<div class="large-3 columns">
+						<h4>Our Services</h4>
+						<ul type="square">
+							<li>Customized outfits</li>
+							<li>Alteration</li>
+							<li>Developing digital prints for fabrics</li>
+							<li>Bulk orders for domestic and international markets</li>
+						</ul>
+					</div>
+				</div>
 
 			</div>
-		</div>
-	</div>
-	<!--End Header and Nav -->
+
+			<!--####### END body content here ################-->
 
 
-	<!--####### ORBIT Slideshow ################-->
+			<!--####### ABOUT ################-->
 
-	<div id="home">
-		<div class="row">
-			<div class="large-12 columns">
-				<div class="slideshow-wrapper">
-					<div class="preloader"></div>
-					<ul data-orbit id="slideshowContainer"
-						data-options="timer_speed:10000; resume_on_mouseout: true;">
-						<li><img src="img/slideshow/1.png" /> <!-- IMages LAZY loaded -->
-							<div class="orbit-caption">Indian Kurtis in Cotton</div></li>
-						<li><img class="lazy" src="img/grey.gif"
-							data-original="img/slideshow/6.png" />
-							<div class="orbit-caption">Designer Kurtis with hand work</div></li>
-						<li><img class="lazy" src="img/grey.gif"
-							data-original="img/slideshow/7.png" />
-							<div class="orbit-caption">Western Tops in Chiffon ,
-								Georgette & Lace</div></li>
-						<li><img class="lazy" src="img/grey.gif"
-							data-original="img/slideshow/9.png" />
-							<div class="orbit-caption"></div></li>
-						<li><img class="lazy" src="img/grey.gif"
-							data-original="img/slideshow/13.png" />
-							<div class="orbit-caption">Jewellery – Semi Precious Stones</div></li>
-					</ul>
+			<div id="about">
+				<div class="row">
+					<div class="large-12 columns">
+						<br>
+						<p>
+							<span class="x_purple"><b>X</span>TENSION</b>, our retail outlet
+							started in December 2012 for regular and PLUS size women who like
+							stylish, trendy and comfortable clothing.
+						</p>
+						<p>While our retail space is fairly new, we have been in the
+							garment industry for the last 20 years and have done work for
+							quite a few fashion houses in Europe and the Gulf. We have also
+							done work for large well known retail outlets in India.</p>
+					</div>
 				</div>
 			</div>
-		</div>
 
-		<!--####### BIG in fashion ################-->
 
-		<div class="row back_black align_right">
-			<div class="large-6 columns">
-				<h1 class="color_white inline auto_margin">BIG</h1>
-				<span>&nbsp;</span>
-				<h1 class="quote inline auto_margin">in</h1>
-				<span>&nbsp;</span>
-				<h1 class="color_white inline auto_margin">FASHION</h1>
+			<!--#######  PRODUCTS page ####### -->
+
+			<div id="products">
+				<div class="row">
+					<div class="large-12 columns">
+						<br>
+						<p>products...</p>
+					</div>
+				</div>
 			</div>
-			<div class="large-6 columns">
-				<p class="color_white align_left auto_margin">To be BIG in
-					Fashion and the preferred choice for customers in the domestic and
-					international markets</p>
-			</div>
-		</div>
 
-		<!--####### MISSION etc ################-->
+			<!--#######  KURTIS page. loaded from Kurtis HTML ####### -->
 
-		<br>
-		<div class="row">
-			<div class="large-4 columns">
-				<h4>Mission</h4>
-				<ul type="square">
-					<li>Specialize in PLUS sizes</li>
-					<li>Be a market leader in value retailing</li>
-					<li>Provide fashionable products at affordable prices</li>
-					<li>Maintain the best quality standards</li>
-					<li>Be innovative, cost effective and globally competitive</li>
-					<li>Exceed our customers’ expectations</li>
-				</ul>
+			<div id="products_kurtis"></div>
 
+			<!-- #######  WESTERN page  ####### -->
+
+			<div id="products_western">
+				<div class="row">
+					<div class="large-12 columns">
+						<br>
+						<p>WESTERN...</p>
+					</div>
+				</div>
 			</div>
-			<div class="large-5 columns">
-				<h4>The Company</h4>
-				<p>XTENSION, our retail outlet started in December 2012 for
-					regular and PLUS size women who like stylish, trendy and
-					comfortable clothing.</p>
-				<p>While our retail space is fairly new, we have been in the
-					garment industry for the last 20 years and have done work for quite
-					a few fashion houses in Europe and the Gulf. We have also done work
-					for large well known retail outlets in India.</p>
+
+			<!--#######  TUNICS page #######  -->
+
+			<div id="products_tunics">
+				<div class="row">
+					<div class="large-12 columns">
+						<br>
+						<p>tunics...</p>
+					</div>
+				</div>
 			</div>
-			<div class="large-3 columns">
-				<h4>Our Services</h4>
-				<ul type="square">
-					<li>Customized outfits</li>
-					<li>Alteration</li>
-					<li>Developing digital prints for fabrics</li>
-					<li>Bulk orders for domestic and international markets</li>
-				</ul>
+
+			<!--#######  T-SHIRTS page #######  -->
+
+			<div id="products_tshirts">
+				<div class="row">
+					<div class="large-12 columns">
+						<br>
+						<p>tshirts...</p>
+					</div>
+				</div>
+			</div>
+
+			<!--#######  JEWELLERY page ####### -->
+
+			<div id="products_jewellery">
+				<div class="row">
+					<div class="large-12 columns">
+						<br>
+						<p>jewellery...</p>
+					</div>
+				</div>
+			</div>
+
+			<!--#######  CONTACT page ####### -->
+
+			<div id="contact">
+				<div class="row">
+					<div class="large-12 columns">
+						<br>
+						<p>contact...</p>
+					</div>
+				</div>
+			</div>
+
+			<!--#######  SEARCH DATA ####### -->
+
+			<div id="searchSection">
+				<div class="row">
+					<div class="large-12 columns">
+						<br>
+						<ul class="searchdata">
+							<li><p class="margin4">To be BIG in Fashion and the
+									preferred choice for customers in the domestic and
+									international markets
+								<p>
+									<a href="">home page</a><br></li>
+							<li><p class="margin4">Mission Specialize in PLUS sizes
+									Be a market leader in value retailing Provide fashionable
+									products at affordable prices Maintain the best quality
+									standards Be innovative, cost effective and globally
+									competitive Exceed our customers’ expectations
+								<p>
+									<a href="">home page</a></li>
+							<li><p class="margin4">The Company XTENSION, our retail
+									outlet started in December 2012 for regular and PLUS size women
+									who like stylish, trendy and comfortable clothing. While our
+									retail space is fairly new, we have been in the garment
+									industry for the last 20 years and have done work for quite a
+									few fashion houses in Europe and the Gulf. We have also done
+									work for large well known retail outlets in India.
+								<p>
+									<a href="">home page</a></li>
+							<li><p class="margin4">Our Services Customized outfits
+									Alteration Developing digital prints for fabrics Bulk orders
+									for domestic and international markets
+								<p>
+									<a href="">home page</a></li>
+							<li><p class="margin4">XTENSION, our retail outlet
+									started in December 2012 for regular and PLUS size women who
+									like stylish, trendy and comfortable clothing. While our retail
+									space is fairly new, we have been in the garment industry for
+									the last 20 years and have done work for quite a few fashion
+									houses in Europe and the Gulf. We have also done work for large
+									well known retail outlets in India.
+								<p>
+									<a href="#/about">about page</a></li>
+							<li><p class="margin4">Indian Kurtis in cotton ..cotton
+									mix ..linen Designer Kurtis with hand work .. machine work
+								<p>
+									<a href="#/products/kurtis">kurtis page</a></li>
+							<li><p class="margin4">Help | contact | not working |
+									phone | email | mail | address | telephone | talk | chat
+								<p>
+									<a href="#/contact">contact page</a></li>
+							<li><p class="margin4">Western Dresses in Chiffon,
+									Gorgette Poplin Lycra with handwork. Tops in Chiffon, Georgette
+									Lace
+								<p>
+									<a href="#/products/western">western page</a></li>
+						</ul>
+
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<!--####### Footer ################-->
 
-		<footer class="row">
-			<div class="large-5 mobilenoshow columns">
-				<p class="footertext">Note: this website is best viewed in IE9+
-					or the latest versions of Chrome & Firefox. On dektop or mobile
-					too.</p>
-			</div>
-			<div class="large-7 small-12 columns">
-				<div class="footerLeft">
-					<ul>
-						<li><a href="">HOME</a></li>
-						<li><a href="#/about">ABOUT US</a></li>
-						<li><a href="#/contact">CONTACT US</a></li>
-						<li><a href="#/credits">SITE-DESIGN</a></li>
-					</ul>
+		<div id="footer">
+			<footer class="row">
+				<div class="large-5 mobilenoshow columns">
+					<p class="footertext">Note: this website is best viewed in IE9+
+						or the latest versions of Chrome & Firefox. On dektop or mobile
+						too.</p>
 				</div>
-
-			</div>
-		</footer>
-
-	</div>
-
-	<!--####### END body content here ################-->
-
-
-	<!--####### ABOUT ################-->
-
-	<div id="about">
-		<div class="row">
-			<div class="large-12 columns">
-				<br>
-				<p>
-					<span class="x_purple"><b>X</span>TENSION</b>, our retail outlet started in
-					December 2012 for regular and PLUS size women who like stylish,
-					trendy and comfortable clothing.
-				</p>
-				<p>While our retail space is fairly new, we have been in the
-					garment industry for the last 20 years and have done work for quite
-					a few fashion houses in Europe and the Gulf. We have also done work
-					for large well known retail outlets in India.</p>
-			</div>
+				<div class="large-7 small-12 columns">
+					<div class="footerLeft">
+						<ul>
+							<li><a href="">HOME</a></li>
+							<li><a href="#/about">ABOUT US</a></li>
+							<li><a href="#/contact">CONTACT US</a></li>
+							<li><a href="#/credits">SITE-DESIGN</a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
 		</div>
-	</div>
 
-
-	<!--#######  PRODUCTS page ####### -->
-
-	<div id="products">
-		<div class="row">
-			<div class="large-12 columns">
-				<br>
-				<p>products...</p>
-			</div>
-		</div>
-	</div>
-
-	<!--#######  KURTIS page. loaded from Kurtis HTML ####### -->
-
-	<div id="products_kurtis"></div>
-
-	<!-- #######  WESTERN page  ####### -->
-
-	<div id="products_western">
-		<div class="row">
-			<div class="large-12 columns">
-				<br>
-				<p>WESTERN...</p>
-			</div>
-		</div>
-	</div>
-
-	<!--#######  TUNICS page #######  -->
-
-	<div id="products_tunics">
-		<div class="row">
-			<div class="large-12 columns">
-				<br>
-				<p>tunics...</p>
-			</div>
-		</div>
-	</div>
-
-	<!--#######  T-SHIRTS page #######  -->
-
-	<div id="products_tshirts">
-		<div class="row">
-			<div class="large-12 columns">
-				<br>
-				<p>tshirts...</p>
-			</div>
-		</div>
-	</div>
-
-	<!--#######  JEWELLERY page ####### -->
-
-	<div id="products_jewellery">
-		<div class="row">
-			<div class="large-12 columns">
-				<br>
-				<p>jewellery...</p>
-			</div>
-		</div>
-	</div>
-
-	<!--#######  CONTACT page ####### -->
-
-	<div id="contact">
-		<div class="row">
-			<div class="large-12 columns">
-				<br>
-				<p>contact...</p>
-			</div>
-		</div>
-	</div>
-
-	<!--#######  SEARCH DATA ####### -->
-
-	<div id="searchSection">
-		<div class="row">
-			<div class="large-12 columns">
-				<br>
-				<ul class="searchdata">
-					<li><p class="margin4">To be BIG in Fashion and the
-							preferred choice for customers in the domestic and international
-							markets
-						<p>
-							<a href="">home page</a><br></li>
-					<li><p class="margin4">Mission Specialize in PLUS sizes Be
-							a market leader in value retailing Provide fashionable products
-							at affordable prices Maintain the best quality standards Be
-							innovative, cost effective and globally competitive Exceed our
-							customers’ expectations
-						<p>
-							<a href="">home page</a></li>
-					<li><p class="margin4">The Company XTENSION, our retail
-							outlet started in December 2012 for regular and PLUS size women
-							who like stylish, trendy and comfortable clothing. While our
-							retail space is fairly new, we have been in the garment industry
-							for the last 20 years and have done work for quite a few fashion
-							houses in Europe and the Gulf. We have also done work for large
-							well known retail outlets in India.
-						<p>
-							<a href="">home page</a></li>
-					<li><p class="margin4">Our Services Customized outfits
-							Alteration Developing digital prints for fabrics Bulk orders for
-							domestic and international markets
-						<p>
-							<a href="">home page</a></li>
-					<li><p class="margin4">XTENSION, our retail outlet started
-							in December 2012 for regular and PLUS size women who like
-							stylish, trendy and comfortable clothing. While our retail space
-							is fairly new, we have been in the garment industry for the last
-							20 years and have done work for quite a few fashion houses in
-							Europe and the Gulf. We have also done work for large well known
-							retail outlets in India.
-						<p>
-							<a href="#/about">about page</a></li>
-					<li><p class="margin4">Indian Kurtis in cotton ..cotton
-							mix ..linen Designer Kurtis with hand work .. machine work
-						<p>
-							<a href="#/products/kurtis">kurtis page</a></li>
-					<li><p class="margin4">Help..contact..not working
-						<p>
-							<a href="#/contact">contact page</a></li>
-					<li><p class="margin4">Western Dresses in Chiffon,Gorgette
-							Poplin Lycra with handwork. Tops in Chiffon, Georgette Lace
-						<p>
-							<a href="#/products/western">western page</a></li>
-				</ul>
-
-			</div>
-		</div>
 	</div>
 
 	<!-- ######################################################### -->
@@ -362,6 +386,7 @@ you may add app.css to use for your overrides if you like. -->
 	<script src="js/foundation/foundation.orbit.js"></script>
 	<script src="js/foundation/foundation.topbar.js"></script>
 	<script src="js/foundation/foundation.section.js"></script>
+	<script src="js/foundation/foundation.tooltips.js"></script>
 
 	<!-- 	<script src="js/foundation/foundation.clearing.js"></script> -->
 	<!-- 	<script src="js/foundation/foundation.cookie.js"></script> -->
@@ -372,7 +397,6 @@ you may add app.css to use for your overrides if you like. -->
 	<!-- 	<script src="js/foundation/foundation.magellan.js"></script> -->
 	<!-- 	<script src="js/foundation/foundation.placeholder.js"></script> -->
 	<!-- 	<script src="js/foundation/foundation.reveal.js"></script> -->
-	<!-- 	<script src="js/foundation/foundation.tooltips.js"></script> -->
 	<!-- 	<script src="js/foundation/foundation.interchange.js"></script> -->
 	<script>
 		$(document).foundation();

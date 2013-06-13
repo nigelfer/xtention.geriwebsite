@@ -26,7 +26,7 @@ $(function() {
 	$jewellery = $('#products_jewellery');
 	$contact = $('#contact');
 	$search = $('#searchSection');
-
+	
 	var hideAll = function() {
 		$home.hide();
 		$about.hide();
