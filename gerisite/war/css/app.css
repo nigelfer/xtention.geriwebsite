@@ -164,7 +164,7 @@ div.orbit-caption {
 	padding: 0px 15px !important;
 	line-height: 45px !important;
 	opacity: 0.8;
-	filter: alpha(opacity =                           80);
+	filter: alpha(opacity =                               80);
 	/* For IE8 and earlier */
 }
 
@@ -213,7 +213,7 @@ footer {
 	padding-top: 2%;
 	font-size: .75em;
 	margin: 0px !important;
-/* 	line-height: 0.8em; */
+	/* 	line-height: 0.8em; */
 }
 
 .footerLeft {
@@ -242,7 +242,7 @@ footer {
 .footerLeft ul li a {
 	font-size: .75em;
 	text-decoration: none;
-/* 	font-weight: bold; */
+	/* 	font-weight: bold; */
 	color: #222222;
 }
 
@@ -271,13 +271,14 @@ html,body {
 }
 
 #wrapper {
-	min-height: 99.9%;
+	min-height: 100%;
 	position: relative;
 }
 /* #header { */
 /* 	padding:10px;	 */
 /* } */
-#content {
+#
+content {
 	/* 	padding:10px; */
 	padding-bottom: 55px; /* Height of the footer element */
 }
@@ -289,7 +290,6 @@ html,body {
 	width: 100%;
 }
 /***** sticky footer End *****/
-
 .contact {
 	width: 90%;
 	border-style: none;
@@ -299,13 +299,19 @@ html,body {
 
 .contact td.header {
 	font-size: 1.5em;
-/* 	background: #f2f2f2; */
+	/* 	background: #f2f2f2; */
 }
 
 .contact td {
-/* 	background: #f2f2f2; */
+	/* 	background: #f2f2f2; */
+	
 }
 
 .contact td address {
 	font-weight: normal !important;
+}
+
+html {
+	/* 	overflow: -moz-scrollbars-vertical; */
+/* 	overflow-y: scroll; */
 }

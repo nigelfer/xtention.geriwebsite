@@ -35,6 +35,19 @@
 .foundicon-location:after {
 	content: "Address";
 }
+
+#map {
+	/* 	visibility: hidden; */
+	display: none;
+	
+}
+
+#mapit {
+	cursor: pointer;
+	width: 95%;
+/* 	padding-bottom: 0px !important; */
+	margin-bottom: 0px !important;
+}
 </style>
 
 <br>
@@ -74,7 +87,10 @@
 						<td><i id="fbimg" class="Socialfoundicon-facebook fb"></i></td>
 					</tr>
 					<tr>
-						<td><a href="##">Visit us on Facebook</a></td>
+						<td><a
+							href="https://www.facebook.com/pages/Xtension/337105089720817"
+							target="_blank"
+						>Visit us on Facebook</a></td>
 					</tr>
 				</table>
 			</div>
@@ -89,20 +105,38 @@
 					<tr>
 						<td>
 							<address>
-								Shop No.3, Abhishek Apts,<br> (Next to Vijay Sales)
-								S.V.Road,<br> Irla Bridge ,Andheri(W)<br> Mumbai
+								Shop No.3, Abhishek Apts, <br> (Next to Vijay Sales)
+								S.V.Road, <br> Irla Bridge ,Andheri(W) <br> Mumbai
 								400058, India
-							</address>
+							</address> <br> <a id="mapit" onclick="mapitClick();" class="button">View
+								map &raquo;</a>
 						</td>
 					</tr>
 				</table>
 			</div>
-			<div class="large-8 columns">
-				<iframe
-					src="https://mapsengine.google.com/map/edit?mid=zp98qNAWQcxk.kGiAyK6HBf-c"
-					 width="95%" height="450px"
-				> Map of our location in india. </iframe>
+			<div id="map" class="large-8 columns">
+				<iframe width="90%" height="300"
+					src="http://maps.google.com/maps/ms?msa=0&amp;msid=217857617136457694626.0004df0d485fc70a4aa98&amp;ie=UTF8&amp;t=m&amp;ll=19.112914,72.841866&amp;spn=0.004866,0.006866&amp;z=17&amp;iwloc=0004df0d4c062ca6b95e5&amp;output=embed"
+				></iframe>
+				<p> View <a
+					href="https://maps.google.com/maps/ms?msa=0&amp;msid=217857617136457694626.0004df0d485fc70a4aa98&amp;ie=UTF8&amp;t=m&amp;ll=19.112914,72.841866&amp;spn=0.004866,0.006866&amp;z=17&amp;iwloc=0004df0d4c062ca6b95e5&amp;source=embed"
+					target="_blank" style="color: #0000FF; text-align: left"
+				>Xtension Enterprises</a> in a larger map
+				</p>
 			</div>
 		</div>
 	</div>
 </div>
+</div>
+
+<script>
+	$(function() {
+// 		$('#map').hide();
+		//alert("loaad");
+	});
+
+	function mapitClick() {
+		$('#map').slideToggle(500);
+		//alert("show");
+	}
+</script>
