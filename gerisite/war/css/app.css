@@ -277,8 +277,7 @@ html,body {
 /* #header { */
 /* 	padding:10px;	 */
 /* } */
-#
-content {
+#content {
 	/* 	padding:10px; */
 	padding-bottom: 55px; /* Height of the footer element */
 }
@@ -311,7 +310,10 @@ content {
 	font-weight: normal !important;
 }
 
-html {
-	/* 	overflow: -moz-scrollbars-vertical; */
-/* 	overflow-y: scroll; */
+#map p {
+	margin-bottom: 2px;
+}
+
+#about p:FIRST-LETTER {
+	font-size: 2em; 
 }

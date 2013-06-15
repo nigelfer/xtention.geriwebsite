@@ -26,7 +26,7 @@ $(function() {
 	$jewellery = $('#products_jewellery');
 	$contact = $('#contact');
 	$search = $('#searchSection');
-	
+
 	var hideAll = function() {
 		$home.hide();
 		$about.hide();
@@ -64,30 +64,38 @@ $(function() {
 	});
 	$.History.bind('/products/kurtis', function(state) {
 		hideAll();
+		closeMenu();
 		$kurtis.load('kurtis.html');
 		$kurtis.stop(true, true).fadeIn(10);
 		searchShown = false;
 	});
 	$.History.bind('/products/western', function(state) {
 		hideAll();
+		closeMenu();
 		$western.load('western.html');
 		$western.stop(true, true).fadeIn(200);
 		searchShown = false;
 	});
 	$.History.bind('/products/tunics', function(state) {
 		hideAll();
+		closeMenu();
 		$tunics.stop(true, true).fadeIn(200);
 		searchShown = false;
 	});
 	$.History.bind('/products/tshirts', function(state) {
 		hideAll();
+		closeMenu();
 		$tshirts.stop(true, true).fadeIn(200);
 		searchShown = false;
+
 	});
 	$.History.bind('/products/jewellery', function(state) {
 		hideAll();
+		closeMenu();
+
 		$jewellery.stop(true, true).fadeIn(200);
 		searchShown = false;
+
 	});
 	$.History.bind('/contact', function(state) {
 		hideAll();
@@ -135,6 +143,13 @@ $(function() {
 	});
 
 });
+
+function closeMenu() {
+	var parent = $('nav.top-bar');
+	if (parent.hasClass('expanded')) {
+		parent.toggleClass('expanded').css('min-height', '');
+	}
+}
 
 // for IE8
 // function adjustStyle(width) {
