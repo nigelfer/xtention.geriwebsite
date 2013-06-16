@@ -136,7 +136,9 @@
           width: '95%',
           left: '2.5%',
           'max-width': 'none',
-          top: position.top + this.outerHeight(target)
+          /* nigel here . move dropdown UP */
+//          top: position.top + this.outerHeight(target)
+          top: position.top - this.outerHeight(target) - dropdown[0].clientHeight
         });
       } else {
         if (!Foundation.rtl && $(window).width() > this.outerWidth(dropdown) + target.offset().left) {
@@ -153,7 +155,9 @@
 
         dropdown.attr('style', '').css({
           position : 'absolute',
-          top: position.top + this.outerHeight(target),
+          /* nigel here . move dropdown UP */
+//          top: position.top + this.outerHeight(target),
+          top: position.top - this.outerHeight(target)- dropdown[0].clientHeight,
           left: left
         });
       }

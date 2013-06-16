@@ -217,7 +217,7 @@ footer {
 }
 
 .footerLeft {
-	padding-left: 30%;
+	padding-left: 35%;
 	float: right;
 	padding-top: 2%;
 	width: 100%;
@@ -233,6 +233,8 @@ footer {
 
 .footerLeft>ul:nth-child(1)>li:Last-child {
 	border-style: none !important;
+	margin-right: 0;
+	padding-right: 0;	
 }
 
 .footerLeft ul {

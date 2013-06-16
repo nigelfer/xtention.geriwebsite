@@ -50,13 +50,14 @@ you may add app.css to use for your overrides if you like. -->
 									<td style="width: 20%;"><span id="filter-count"></span></td>
 									<td style="width: 60%;"><input type="text"
 										class="text-input" id="filter" value=""
-										placeholder="Type to search.." /></td>
+										placeholder="Type to search.."
+									/></td>
 									<td style="width: 15%;"><a
 										href="https://www.facebook.com/pages/Xtension/337105089720817"
-										target="_blank"> <span data-tooltip
-											data-options="disable-for-touch:false"
-											class="has-tip tip-bottom" title="Visit our facebook page">
-												<i id="fbimg" class="Socialfoundicon-facebook"></i> <!--<img id="fbimg" src="img/facebook_logo.jpg"></img> -->
+										target="_blank"
+									> <span data-tooltip data-options="disable-for-touch:false"
+											class="has-tip tip-bottom" title="Visit our facebook page"
+										> <i id="fbimg" class="Socialfoundicon-facebook"></i> <!--<img id="fbimg" src="img/facebook_logo.jpg"></img> -->
 										</span>
 									</a></td>
 								</tr>
@@ -107,21 +108,26 @@ you may add app.css to use for your overrides if you like. -->
 						<div class="slideshow-wrapper">
 							<div class="preloader"></div>
 							<ul data-orbit id="slideshowContainer"
-								data-options="timer_speed:10000; resume_on_mouseout: true;">
+								data-options="timer_speed:10000; resume_on_mouseout: true;"
+							>
 								<li><img src="img/slideshow/1.png" /> <!-- IMages LAZY loaded -->
 									<div class="orbit-caption">Indian Kurtis in Cotton</div></li>
 								<li><img class="lazy" src="img/grey.gif"
-									data-original="img/slideshow/6.png" />
+									data-original="img/slideshow/6.png"
+								/>
 									<div class="orbit-caption">Designer Kurtis with hand work</div></li>
 								<li><img class="lazy" src="img/grey.gif"
-									data-original="img/slideshow/7.png" />
+									data-original="img/slideshow/7.png"
+								/>
 									<div class="orbit-caption">Western Tops in Chiffon ,
 										Georgette & Lace</div></li>
 								<li><img class="lazy" src="img/grey.gif"
-									data-original="img/slideshow/9.png" />
+									data-original="img/slideshow/9.png"
+								/>
 									<div class="orbit-caption"></div></li>
 								<li><img class="lazy" src="img/grey.gif"
-									data-original="img/slideshow/13.png" />
+									data-original="img/slideshow/13.png"
+								/>
 									<div class="orbit-caption">Jewellery – Semi Precious
 										Stones</div></li>
 							</ul>
@@ -194,11 +200,9 @@ you may add app.css to use for your overrides if you like. -->
 				<div class="row">
 					<div class="large-12 columns">
 						<br>
-						<p>
-							XTENSION, our retail outlet
-							started in December 2012 for regular and PLUS size women who like
-							stylish, trendy and comfortable clothing.
-						</p>
+						<p>XTENSION, our retail outlet started in December 2012 for
+							regular and PLUS size women who like stylish, trendy and
+							comfortable clothing.</p>
 						<p>While our retail space is fairly new, we have been in the
 							garment industry for the last 20 years and have done work for
 							quite a few fashion houses in Europe and the Gulf. We have also
@@ -206,7 +210,6 @@ you may add app.css to use for your overrides if you like. -->
 					</div>
 				</div>
 			</div>
-
 
 			<!--#######  PRODUCTS page ####### -->
 
@@ -269,8 +272,7 @@ you may add app.css to use for your overrides if you like. -->
 
 			<!--#######  CONTACT page ####### -->
 
-			<div id="contact">
-			</div>
+			<div id="contact"></div>
 
 			<!--#######  SEARCH DATA ####### -->
 
@@ -349,13 +351,28 @@ you may add app.css to use for your overrides if you like. -->
 							<li><a href="">HOME</a></li>
 							<li><a href="#/about">ABOUT US</a></li>
 							<li><a href="#/contact">CONTACT US</a></li>
-							<li><a href="#/credits">CREDITS</a></li>
+							<li><a data-dropdown="contentDrop">CREDITS</a></li>
 						</ul>
 					</div>
 				</div>
 			</footer>
+
 		</div>
 
+	</div>
+
+	<!--#######  CREDITS ####### -->
+	<div id="contentDrop" class="f-dropdown content medium"
+		data-dropdown-content
+	>
+		<p>
+			Site was designed by NIGEL in <a
+				href="http://en.wikipedia.org/wiki/Responsive_web_design"
+				target="_blank"
+			>Responsive fashion</a> based on the excellent <a
+				href="http://foundation.zurb.com/" target="_blank"
+			> Foundaion framework by Zurb</a>
+		</p>
 	</div>
 
 	<!-- ######################################################### -->
@@ -381,13 +398,13 @@ you may add app.css to use for your overrides if you like. -->
 	<script src="js/foundation/foundation.topbar.js"></script>
 	<script src="js/foundation/foundation.section.js"></script>
 	<script src="js/foundation/foundation.tooltips.js"></script>
+	<script src="js/foundation/foundation.dropdown.js"></script>
+	<script src="js/foundation/foundation.joyride.js"></script>
 
 	<!-- 	<script src="js/foundation/foundation.clearing.js"></script> -->
 	<!-- 	<script src="js/foundation/foundation.cookie.js"></script> -->
 	<!-- 	<script src="js/foundation/foundation.alerts.js"></script> -->
-	<!-- 	<script src="js/foundation/foundation.dropdown.js"></script> -->
 	<!-- 	<script src="js/foundation/foundation.forms.js"></script> -->
-	<!-- 	<script src="js/foundation/foundation.joyride.js"></script> -->
 	<!-- 	<script src="js/foundation/foundation.magellan.js"></script> -->
 	<!-- 	<script src="js/foundation/foundation.placeholder.js"></script> -->
 	<!-- 	<script src="js/foundation/foundation.reveal.js"></script> -->
@@ -402,6 +419,5 @@ you may add app.css to use for your overrides if you like. -->
 	<script src="js/jquery.history.js"></script>
 	<!-- App JS -->
 	<script src="js/app.js"></script>
-
 </body>
 </html>
