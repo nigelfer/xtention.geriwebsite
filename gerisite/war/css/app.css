@@ -82,7 +82,8 @@
 }
 
 .top-bar,#___gcse_0 {
-	margin-bottom: 10px !important;
+	margin-top: 5px;
+	margin-bottom: 5px !important;
 }
 
 div.large-3:nth-child(1)>h1:nth-child(1) {
@@ -164,18 +165,22 @@ div.orbit-caption {
 	padding: 0px 15px !important;
 	line-height: 45px !important;
 	opacity: 0.8;
-	filter: alpha(opacity =                               80);
+	filter: alpha(opacity =   80);
 	/* For IE8 and earlier */
 }
 
 .text-input {
 	border-radius: 20px;
-	margin-top: 10px !important;
+	margin-top: 5px !important;
 	margin-bottom: 0 !important;
 	padding: 3px !important;
 	padding-left: 15px !important;
 	padding-right: 10px !important;
-	width: 80%;
+	width: 85%;
+}
+
+#filter-count {
+	margin-top: 10px;
 }
 
 .searchdata p.margin4 {
@@ -234,7 +239,7 @@ footer {
 .footerLeft>ul:nth-child(1)>li:Last-child {
 	border-style: none !important;
 	margin-right: 0;
-	padding-right: 0;	
+	padding-right: 0;
 }
 
 .footerLeft ul {
@@ -317,5 +322,15 @@ html,body {
 }
 
 #about p:FIRST-LETTER {
-	font-size: 2em; 
+	font-size: 2em;
+}
+
+/* prevent page shift css-tricks.com
+	/eliminate-jumps-in-horizontal-centering-by-forcing-a-scroll-bar */ 
+html {
+	overflow-y: scroll;
+}
+
+#logoh1 {
+	margin-bottom: 2px !important;
 }

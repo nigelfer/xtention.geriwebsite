@@ -66,7 +66,8 @@ $(function() {
 		hideAll();
 		closeMenu();
 		$kurtis.load('kurtis.html');
-		$kurtis.stop(true, true).fadeIn(10);
+		//$kurtis.stop(true, true).fadeIn(10);
+		$kurtis.show();
 		searchShown = false;
 	});
 	$.History.bind('/products/western', function(state) {
