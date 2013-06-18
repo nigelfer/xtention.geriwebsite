@@ -80,6 +80,7 @@ $(function() {
 	$.History.bind('/products/tunics', function(state) {
 		hideAll();
 		closeMenu();
+		$tunics.load('tunics.html');
 		$tunics.stop(true, true).fadeIn(200);
 		searchShown = false;
 	});
@@ -142,6 +143,10 @@ $(function() {
 		var numberItems = count;
 		$("#filter-count").text(count + " Search results");
 	});
+	
+	//temporary partial IE fix to remove space beneath footer 
+	//	caused due to overflow-y:scroll
+	$('html').css('height', '99.9%'); 
 
 });
 

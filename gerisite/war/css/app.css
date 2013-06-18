@@ -165,7 +165,7 @@ div.orbit-caption {
 	padding: 0px 15px !important;
 	line-height: 45px !important;
 	opacity: 0.8;
-	filter: alpha(opacity =   80);
+	filter: alpha(opacity =     80);
 	/* For IE8 and earlier */
 }
 
@@ -271,7 +271,7 @@ footer {
 }
 
 /***** sticky footer *****/
-html,body {
+body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -326,8 +326,11 @@ html,body {
 }
 
 /* prevent page shift css-tricks.com
-	/eliminate-jumps-in-horizontal-centering-by-forcing-a-scroll-bar */ 
+	/eliminate-jumps-in-horizontal-centering-by-forcing-a-scroll-bar */
 html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
 	overflow-y: scroll;
 }
 
