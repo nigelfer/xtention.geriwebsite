@@ -224,7 +224,17 @@
 }
 
 /* nav menu */
-.lt-ie9 .top-bar .top-bar-section ul li {
+#ie8menu {
+	outline: none;
+}
+#ie8menu LI {
 	float: left;
 	display: inline;
 }
+#ie8menu LI A {
+	border-right-style: solid;
+	border-right-color: black;
+	border: 0 1 0 0;
+	padding: 0 4px 0 4px;
+}
+/* nav menu end */

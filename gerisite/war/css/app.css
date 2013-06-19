@@ -100,6 +100,13 @@ div.large-3:nth-child(1)>h1:nth-child(1) {
 
 .back_black {
 	background-color: #444444 !important;
+	border-left-style: solid;
+	border-left-width: 15px;
+	border-left-color: #bb52Ae;
+	
+	-webkit-box-shadow: 0 0 7px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 0 7px rgba(0,0,0,0.5);
+	box-shadow: 0 0 7px rgba(0,0,0,0.5);	
 }
 
 .color_white {
@@ -275,6 +282,7 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
+/* 	font-family: Georgia, serif !important; */
 }
 
 #wrapper {
