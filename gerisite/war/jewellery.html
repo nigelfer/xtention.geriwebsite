@@ -1,0 +1,39 @@
+<!--########## JEWELLERY page #########-->
+
+<div class="row">
+	<div class="large-12 columns">
+		<div class="section-container vertical-tabs"
+			data-section="vertical-tabs" id="jewselection"
+		>
+			<section class="active">
+				<p class="title" data-section-title>
+					<a href="#">Semi Precious Stones 1 </a>
+				</p>
+				<div id="imgs" class="content" data-section-content>
+					<img src="img/jewellery/12.png" />
+				</div>
+			</section>
+			<section>
+				<p class="title" data-section-title>
+					<a href="#">Semi Precious Stones 2 </a>
+				</p>
+				<div id="imgs" class="content" data-section-content>
+					<img class="lazy" src="img/grey.gif"
+						data-original="img/jewellery/13.png"
+					/>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(function() {
+		$('#jewselection').foundation('section', 'reflow');
+
+		$("img.lazy").lazyload({
+			container : $("#jewselection"),
+			effect : "fadeIn"
+		});
+	});
+</script>

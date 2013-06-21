@@ -66,13 +66,14 @@
 		$('#kurtisection').foundation('section', 'reflow');
 
 		$("img.lazy").lazyload({
-			container : $("#kurtisection")
+			container : $("#kurtisection"),
+			effect : "fadeIn"
 		});
 
 		/* ## animate panels */
-		$title = $('.section-container section .title');
-		$title.click(function() {
-			$(this).parent().find('#imgs').hide().slideDown('slow');
-		});
+// 		$title = $('.section-container section .title');
+// 		$title.click(function() {
+// 			$(this).parent().find('#imgs').hide().slideDown('slow');
+// 		});
 	});
 </script>

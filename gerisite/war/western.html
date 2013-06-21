@@ -2,7 +2,7 @@
 
 <div class="row">
 	<div class="large-12 columns">
-<!-- 		<h2>Western outfits</h2> -->
+		<!-- 		<h2>Western outfits</h2> -->
 
 		<div class="section-container vertical-tabs"
 			data-section="vertical-tabs" id="westsection"
@@ -37,15 +37,15 @@
 		$('#westsection').foundation('section', 'reflow');
 
 		$("img.lazy").lazyload({
-			container : $("#westsection")
+			container : $("#westsection"),
+			effect : "fadeIn"
 		});
 
 		/* ## animate panels */
-		$title = $('.section-container section .title');
-		$title.click(function() {
-			//$img1 = $(this).parent('.active').$('.content');
-			$(this).parent().find('#imgs').hide().slideDown('slow');
-		});
-
+		// 		$title = $('.section-container section .title');
+		// 		$title.click(function() {
+		// 			//$img1 = $(this).parent('.active').$('.content');
+		// 			$(this).parent().find('#imgs').hide().slideDown('slow');
+		// 		});
 	});
 </script>

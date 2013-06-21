@@ -66,8 +66,8 @@ $(function() {
 		hideAll();
 		closeMenu();
 		$kurtis.load('kurtis.html');
-		//$kurtis.stop(true, true).fadeIn(10);
-		$kurtis.show();
+		$kurtis.stop(true, true).show();
+//		$kurtis.show();
 		searchShown = false;
 	});
 	$.History.bind('/products/western', function(state) {
@@ -94,8 +94,8 @@ $(function() {
 	$.History.bind('/products/jewellery', function(state) {
 		hideAll();
 		closeMenu();
-
-		$jewellery.stop(true, true).fadeIn(200);
+		$jewellery.load('jewellery.html');
+		$jewellery.stop(true, true).show();
 		searchShown = false;
 
 	});

@@ -195,7 +195,8 @@ div.orbit-caption {
 }
 
 section .title {
-	font-weight: bold;
+/* 	font-weight: bold; */
+	font-family: georgia, serif;
 }
 
 .button {
