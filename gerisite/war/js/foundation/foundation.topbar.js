@@ -250,7 +250,7 @@
 					 * below
 					 */
 					window.setTimeout(function() {
-						$('.top-bar li, [data-topbar] li').removeClass('hover');
+						$('.top-bar li, [data-topbar] li').removeClass('hover');						
 					}, 300);
 					//$('.top-bar li, [data-topbar] li').removeClass('hover');
 					return;

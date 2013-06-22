@@ -232,9 +232,10 @@
 	display: inline;
 }
 #ie8menu LI A {
+	font-weight: bold;
 	border-right-style: solid;
-	border-right-color: black;
-	border: 0 1 0 0;
+	border-right-color: gray;
+	border: 0 0.75 0 0;
 	padding: 0 4px 0 4px;
 }
 /* nav menu end */

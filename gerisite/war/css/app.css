@@ -13,14 +13,30 @@
 		/* 		font-size: 0.9em !important; */
 		font-family: "Open Sans Condensed", serif;
 		font-weight: bold;
-		font-size: 1.2em;
-	
+		font-size: 1.3em;
+		/* 		font-size: 0.9em !important; */
 	}
 	.top-bar .top-bar-section a:HOVER {
-		text-decoration: underline;
+		/* 		text-decoration: underline; */
+		color: #933A93;
+	}
+	.top-bar .top-bar-section a.selected {
+		color: #933A93 !important;
 	}
 	.top-bar-section .dropdown li a {
 		color: #111111;
+	}
+
+	/* for the angled right side big in fashion box. */
+	.hbg {
+		background-color: white !important;
+		border-right: 2.5em solid transparent;
+		border-top: 5.5em solid #474747;
+		height: 0;
+		border-left: 4em solid #933A93 !important;
+	}
+	.hbg #bif {
+		margin-top: -5em !important;
 	}
 }
 
@@ -83,6 +99,15 @@
 	#footer {
 		height: 110px !important;
 	}
+}
+
+.hbg {
+	background-color: #444444;
+	border-left: 2em solid #933A93;
+}
+
+.hbg #bif {
+	margin-top: 0;
 }
 
 .top-bar,#___gcse_0 {
@@ -175,7 +200,7 @@ div.orbit-caption {
 	padding: 0px 15px !important;
 	line-height: 45px !important;
 	opacity: 0.8;
-	filter: alpha(opacity =         80);
+	filter: alpha(opacity =             80);
 	/* For IE8 and earlier */
 }
 
@@ -199,7 +224,8 @@ div.orbit-caption {
 
 section .title {
 	/* 	font-weight: bold; */
-	font-family: georgia, serif;
+	/* 	font-family: georgia, serif; */
+	
 }
 
 .button {
@@ -286,7 +312,7 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-/* 		font-family: "Open Sans Condensed", serif; */
+	/* 		font-family: "Open Sans Condensed", serif; */
 }
 
 #wrapper {
