@@ -10,7 +10,11 @@
 	}
 	.top-bar-section ul li a {
 		color: #333333;
-		font-size: 0.9em !important;
+		/* 		font-size: 0.9em !important; */
+		font-family: "Open Sans Condensed", serif;
+		font-weight: bold;
+		font-size: 1.2em;
+	
 	}
 	.top-bar .top-bar-section a:HOVER {
 		text-decoration: underline;
@@ -103,10 +107,9 @@ div.large-3:nth-child(1)>h1:nth-child(1) {
 	border-left-style: solid;
 	border-left-width: 15px;
 	border-left-color: #bb52Ae;
-	
-	-webkit-box-shadow: 0 0 7px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0 0 7px rgba(0,0,0,0.5);
-	box-shadow: 0 0 7px rgba(0,0,0,0.5);	
+	-webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 
 .color_white {
@@ -172,7 +175,7 @@ div.orbit-caption {
 	padding: 0px 15px !important;
 	line-height: 45px !important;
 	opacity: 0.8;
-	filter: alpha(opacity =     80);
+	filter: alpha(opacity =         80);
 	/* For IE8 and earlier */
 }
 
@@ -195,7 +198,7 @@ div.orbit-caption {
 }
 
 section .title {
-/* 	font-weight: bold; */
+	/* 	font-weight: bold; */
 	font-family: georgia, serif;
 }
 
@@ -283,7 +286,7 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-/* 	font-family: Georgia, serif !important; */
+/* 		font-family: "Open Sans Condensed", serif; */
 }
 
 #wrapper {
