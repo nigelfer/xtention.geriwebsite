@@ -405,7 +405,10 @@
       if ($('html').hasClass('ie8compat')) {
         return true;
       }
+      /* nigel here . resize not getting called just before vert tab to accordion 
+       keeping original code here but leving this comment in original 768*/
       return $(this.scope).width() < 768;
+      //return $(this.scope).width() < 753;
     },
 
     off : function () {

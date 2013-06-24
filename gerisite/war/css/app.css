@@ -29,7 +29,7 @@
 
 	/* for the angled right side big in fashion box. */
 	.hbg {
-		background-color: white !important;
+		background-color: white !important; 
 		border-right: 2.5em solid transparent;
 		border-top: 5.5em solid #474747;
 		height: 0;
@@ -38,6 +38,19 @@
 	.hbg #bif {
 		margin-top: -5em !important;
 	}
+    
+	/* for the angled right side hader */
+	.hbghead {
+		background-color: white !important; 
+		border-right: 2.5em solid transparent;
+		border-top: 3.5em solid #474747;
+		height: 0;
+        margin-bottom: 1em;
+	}
+	.hbghead #innerhead {
+		margin-top: -1.5em !important;
+        color : white;
+	}    
 }
 
 /* tablets or mobile specific  */
@@ -109,6 +122,16 @@
 .hbg #bif {
 	margin-top: 0;
 }
+
+/* for the angled right side hader */
+.hbghead {
+	background-color: #444444;
+    margin-bottom: 1em;
+}
+.hbghead #innerhead {
+    margin-top: 0;
+    color : white;
+}    
 
 .top-bar,#___gcse_0 {
 	margin-top: 5px;
