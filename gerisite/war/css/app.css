@@ -1,131 +1,154 @@
 /* 
-	Application CSS file for Gerisite 
+    Application CSS file for Gerisite 
 */
 
 /* for Desktops */
 @media screen and (max-width: 2000px) and (min-width: 940px) {
-	/* 	top nav menu related  */
-	.top-bar-section li a {
-		min-height: 45px !important;
-	}
-	.top-bar-section ul li a {
-		color: #333333;
-		/* 		font-size: 0.9em !important; */
-		font-family: "Open Sans Condensed", serif;
-		font-weight: bold;
-		font-size: 1.3em;
-		/* 		font-size: 0.9em !important; */
-	}
-	.top-bar .top-bar-section a:HOVER {
-		/* 		text-decoration: underline; */
-		color: #933A93;
-	}
-	.top-bar .top-bar-section a.selected {
-		color: #933A93 !important;
-	}
-	.top-bar-section .dropdown li a {
-		color: #111111;
-	}
+    .menu-l2 > a {
+        display: inline !important;
+        color: #333333 !important;
+    }
 
-	/* for the angled right side big in fashion box. */
-	.hbg {
-		background-color: white !important; 
-		border-right: 2.5em solid transparent;
-		border-top: 5.5em solid #474747;
-		height: 0;
-		border-left: 4em solid #933A93 !important;
-	}
-	.hbg #bif {
-		margin-top: -5em !important;
-	}
-    
-	/* for the angled right side hader */
-	.hbghead {
-		background-color: white !important; 
-		border-right: 2.5em solid transparent;
-		border-top: 3.5em solid #474747;
-		height: 0;
+    .menu-l2 {
+        line-height: 2.2em !important;
+    }
+
+    .menu-l3 {
+        line-height: 0.9em !important;
+    }    
+
+    /* 	top nav menu related  */
+    .top-bar-section li > a {
+        min-height: 45px !important;
+    }
+    .top-bar-section ul li > a {
+        color: #333333;
+        /* 		font-size: 0.9em !important; */
+        font-family: "Open Sans Condensed", serif;
+        font-weight: bold;
+        font-size: 1.3em;
+        /* 		font-size: 0.9em !important; */
+    }
+    .top-bar .top-bar-section a:HOVER {
+        /* 		text-decoration: underline; */
+        color: #933A93;
+    }
+    .top-bar .top-bar-section a.selected {
+        color: #933A93 !important;
+    }
+    .top-bar-section .dropdown li a {
+        color: #111111;
+    }
+
+    /* for the angled right side big in fashion box. */
+    .hbg {
+        background-color: white !important; 
+        border-right: 2.5em solid transparent;
+        border-top: 5.5em solid #474747;
+        height: 0;
+        border-left: 4em solid #933A93 !important;
+    }
+    .hbg #bif {
+        margin-top: -5em !important;
+    }
+
+    /* for the angled right side hader */
+    .hbghead {
+        background-color: white !important; 
+        border-right: 2.5em solid transparent;
+        border-top: 3.5em solid #474747;
+        height: 0;
         margin-bottom: 1em;
-	}
-	.hbghead #innerhead {
-		margin-top: -1.5em !important;
+    }
+    .hbghead #innerhead {
+        margin-top: -1.5em !important;
         color : white;
-	}    
+    }    
 }
 
 /* tablets or mobile specific  */
 @media screen and (max-width: 939px) and (min-width: 50px) {
-	/* 	top nav menu related  
-	we want to be large enought to be clikable with finger 
-	and border around make it look nice. */
-	.top-bar-section li a {
-		border-style: solid !important;
-		border-bottom: 1px !important;
-		border-color: gray !important;
-		border-width: 1px !important;
-		min-height: 50px !important;
-	}
-	.footerLeft {
-		padding-left: 2% !important;
-		float: right;
-		padding-top: 2%;
-		width: 100%;
-	}
-	.footerLeft ul li a {
-		border-style: solid;
-		border-width: 1px;
-		cursor: pointer;
-		font-family: inherit;
-		font-weight: bold;
-		line-height: 1;
-		margin: 0 0 1.25em;
-		position: relative;
-		text-decoration: none;
-		text-align: center;
-		display: inline-block;
-		padding-top: 0.75em;
-		padding-right: 1.5em;
-		padding-bottom: 0.8125em;
-		padding-left: 1.5em;
-		font-size: 1em;
-		background-color: #444444;
-		border-color: #999999;
-		color: white !important;
-	}
-	.footerLeft ul li {
-		border-style: none !important;
-		padding-right: 2px !important;
-	}
-	.footerLeft ul li a:hover,.footerLeft ul li a:focus {
-		background-color: #777777;
-	}
-	.footerLeft ul li a:hover {
-		text-decoration: none !important;
-	}
-	.mobilenoshow {
-		width: 0px;
-		display: none !important;
-	}
-	#content {
-		padding-bottom: 110px !important; /* Height of the footer element */
-	}
-	#footer {
-		height: 110px !important;
-	}
+    /* 	top nav menu related  
+    we want to be large enought to be clikable with finger 
+    and border around make it look nice. */
+    .top-bar-section li a {
+        border-style: solid !important;
+        border-bottom: 1px !important;
+        border-color: gray !important;
+        border-width: 1px !important;
+        min-height: 50px !important;
+    }
+    .footerLeft {
+        padding-left: 2% !important;
+        float: right;
+        padding-top: 2%;
+        width: 100%;
+    }
+    .footerLeft ul li a {
+        border-style: solid;
+        border-width: 1px;
+        cursor: pointer;
+        font-family: inherit;
+        font-weight: bold;
+        line-height: 1;
+        margin: 0 0 1.25em;
+        position: relative;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        padding-top: 0.75em;
+        padding-right: 1.5em;
+        padding-bottom: 0.8125em;
+        padding-left: 1.5em;
+        font-size: 1em;
+        background-color: #444444;
+        border-color: #999999;
+        color: white !important;
+    }
+    .footerLeft ul li {
+        border-style: none !important;
+        padding-right: 2px !important;
+    }
+    .footerLeft ul li a:hover,.footerLeft ul li a:focus {
+        background-color: #777777;
+    }
+    .footerLeft ul li a:hover {
+        text-decoration: none !important;
+    }
+    .mobilenoshow {
+        width: 0px;
+        display: none !important;
+    }
+    #content {
+        padding-bottom: 110px !important; /* Height of the footer element */
+    }
+    #footer {
+        height: 110px !important;
+    }
+    .menu-l2 > a {
+        display: block !important;
+        color: white !important;
+    }
+
+    .menu-l3 a {
+        color: white !important;
+        background-color: black  !important;
+        border: none  !important;
+    }    
 }
 
 .hbg {
-	background-color: #444444;
-	border-left: 2em solid #933A93;
+    background-color: #444444;
+    border-left: 2em solid #933A93;
 }
 
 .hbg #bif {
-	margin-top: 0;
+    margin-top: 0;
 }
 
 /* for the angled right side hader */
 .hbghead {
-	background-color: #444444;
+    background-color: #444444;
     margin-bottom: 1em;
 }
 .hbghead #innerhead {
@@ -134,267 +157,326 @@
 }    
 
 .top-bar,#___gcse_0 {
-	margin-top: 5px;
-	margin-bottom: 5px !important;
+    margin-top: 5px;
+    margin-bottom: 5px !important;
 }
 
 div.large-3:nth-child(1)>h1:nth-child(1) {
-	margin-top: 4px !important;
+    margin-top: 4px !important;
 }
 
 #big_purple {
-	color: #bb52Ae !important;
+    color: #bb52Ae !important;
 }
 
 .back_purple {
-	background-color: #bb52Ae !important;
+    background-color: #bb52Ae !important;
 }
 
 .back_black {
-	background-color: #444444 !important;
-	border-left-style: solid;
-	border-left-width: 15px;
-	border-left-color: #bb52Ae;
-	-webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
-	-moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
-	box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    background-color: #444444 !important;
+    border-left-style: solid;
+    border-left-width: 15px;
+    border-left-color: #bb52Ae;
+    -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 
 .color_white {
-	color: white !important;
-	font-weight: bold;
-	text-align: center;
+    color: white !important;
+    font-weight: bold;
+    text-align: center;
 }
 
 .inline {
-	display: inline;
+    display: inline;
 }
 
 .align_right {
-	text-align: right;
+    text-align: right;
 }
 
 .align_left {
-	text-align: left;
+    text-align: left;
 }
 
 .auto_margin {
-	margin-top: 10px !important;
-	margin-bottom: 10px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
 }
 
 .round_corners {
-	border-radius: 20px;
-	border-color: red;
-	border-style: inset;
-	border-width: 4px;
+    border-radius: 20px;
+    border-color: red;
+    border-style: inset;
+    border-width: 4px;
 }
 
 .quote {
-	font-style: italic;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-weight: bold;
-	font-color: white;
-	color: white !important;
-	text-align: center;
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-color: white;
+    color: white !important;
+    text-align: center;
 }
 
 .back_purple h1 {
-	margin-bottom: 5px !important;
+    margin-bottom: 5px !important;
 }
 
 div.orbit-caption {
-	text-align: center !important;
+    text-align: center !important;
 }
 
 .panel {
-	padding: 10px 10px !important;
+    padding: 10px 10px !important;
 }
 
 .box_rotate {
-	-moz-transform: rotate(90deg); /* FF3.5+ */
-	-o-transform: rotate(90deg); /* Opera 10.5 */
-	-webkit-transform: rotate(90deg); /* Saf3.1+, Chrome */
-	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.9)";
-	/* IE8 */
+    -moz-transform: rotate(90deg); /* FF3.5+ */
+    -o-transform: rotate(90deg); /* Opera 10.5 */
+    -webkit-transform: rotate(90deg); /* Saf3.1+, Chrome */
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.9)";
+    /* IE8 */
 }
 
-.top-bar-section .dropdown li a {
-	padding: 0px 15px !important;
-	line-height: 45px !important;
-	opacity: 0.8;
-	filter: alpha(opacity =             80);
-	/* For IE8 and earlier */
-}
+/*.top-bar-section .dropdown li a {
+    padding: 0px 15px !important;
+    line-height: 45px !important;
+    opacity: 0.8;
+    filter: alpha(opacity =             80);
+     For IE8 and earlier 
+}*/
 
 .text-input {
-	border-radius: 20px;
-	margin-top: 5px !important;
-	margin-bottom: 0 !important;
-	padding: 3px !important;
-	padding-left: 15px !important;
-	padding-right: 10px !important;
-	width: 85%;
+    border-radius: 20px;
+    margin-top: 5px !important;
+    margin-bottom: 0 !important;
+    padding: 3px !important;
+    padding-left: 15px !important;
+    padding-right: 10px !important;
+    width: 85%;
 }
 
 #filter-count {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 .searchdata p.margin4 {
-	margin-bottom: 4px;
+    margin-bottom: 4px;
 }
 
 section .title {
-	/* 	font-weight: bold; */
-	/* 	font-family: georgia, serif; */
-	
+    /* 	font-weight: bold; */
+    /* 	font-family: georgia, serif; */
+
 }
 
 .button {
-	background-color: #444444 !important;
+    background-color: #444444 !important;
 }
 
 .button-group {
-	float: right !important;
+    float: right !important;
 }
 
 #fbimg {
-	margin-top: 10px;
-	font-size: 28px;
-	position: relative;
-	top: 10px;
+    margin-top: 10px;
+    font-size: 28px;
+    position: relative;
+    top: 10px;
 }
 
 /*** footer specific */
 footer {
-	border-top: 3px solid #EDEAE5;
-	font-weight: bold;
-	font-weight: .8em;
-	color: gray;
+    border-top: 3px solid #EDEAE5;
+    font-weight: bold;
+    font-weight: .8em;
+    color: gray;
 }
 
 .footertext {
-	padding-top: 2%;
-	font-size: .75em;
-	margin: 0px !important;
-	/* 	line-height: 0.8em; */
+    padding-top: 2%;
+    font-size: .75em;
+    margin: 0px !important;
+    /* 	line-height: 0.8em; */
 }
 
 .footerLeft {
-	padding-left: 35%;
-	float: right;
-	padding-top: 2%;
-	width: 100%;
+    padding-left: 35%;
+    float: right;
+    padding-top: 2%;
+    width: 100%;
 }
 
 .footerLeft ul li {
-	display: inline;
-	list-style: none;
-	margin-right: 2%;
-	padding-right: 10px;
-	border-right: 2px solid #BAB7B2;
+    display: inline;
+    list-style: none;
+    margin-right: 2%;
+    padding-right: 10px;
+    border-right: 2px solid #BAB7B2;
 }
 
 .footerLeft>ul:nth-child(1)>li:Last-child {
-	border-style: none !important;
-	margin-right: 0;
-	padding-right: 0;
+    border-style: none !important;
+    margin-right: 0;
+    padding-right: 0;
 }
 
 .footerLeft ul {
-	margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .footerLeft ul li a {
-	font-size: .75em;
-	text-decoration: none;
-	/* 	font-weight: bold; */
-	color: #222222;
+    font-size: .75em;
+    text-decoration: none;
+    /* 	font-weight: bold; */
+    color: #222222;
 }
 
 .footerLeft ul li a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 /* end footer */
 #topbartab {
-	width: 100%;
-	border: none;
-	margin: 0px;
+    width: 100%;
+    border: none;
+    margin: 0px;
 }
 
 .x_purple {
-	color: #bb52Ae !important;
-	font-size: 3em;
-	font-family: "Edwardian Script ITC", "Brush Script MT", cursive;
-	line-height: 100%;
+    color: #bb52Ae !important;
+    font-size: 3em;
+    font-family: "Edwardian Script ITC", "Brush Script MT", cursive;
+    line-height: 100%;
 }
 
 /***** sticky footer *****/
 body {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	/* 		font-family: "Open Sans Condensed", serif; */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* 		font-family: "Open Sans Condensed", serif; */
 }
 
 #wrapper {
-	min-height: 100%;
-	position: relative;
+    min-height: 100%;
+    position: relative;
 }
 /* #header { */
 /* 	padding:10px;	 */
 /* } */
 #content {
-	/* 	padding:10px; */
-	padding-bottom: 55px; /* Height of the footer element */
+    /* 	padding:10px; */
+    padding-bottom: 55px; /* Height of the footer element */
 }
 
 #footer {
-	height: 55px;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
+    height: 55px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 /***** sticky footer End *****/
 .contact {
-	width: 90%;
-	border-style: none;
-	text-align: center;
-	font-weight: bold;
+    width: 90%;
+    border-style: none;
+    text-align: center;
+    font-weight: bold;
 }
 
 .contact td.header {
-	font-size: 1.5em;
-	/* 	background: #f2f2f2; */
+    font-size: 1.5em;
+    /* 	background: #f2f2f2; */
 }
 
 .contact td {
-	/* 	background: #f2f2f2; */
-	
+    /* 	background: #f2f2f2; */
+
 }
 
 .contact td address {
-	font-weight: normal !important;
+    font-weight: normal !important;
 }
 
 #map p {
-	margin-bottom: 2px;
+    margin-bottom: 2px;
 }
 
 #about p:FIRST-LETTER {
-	font-size: 2em;
+    font-size: 2em;
 }
 
 /* prevent page shift css-tricks.com
-	/eliminate-jumps-in-horizontal-centering-by-forcing-a-scroll-bar */
+    /eliminate-jumps-in-horizontal-centering-by-forcing-a-scroll-bar */
 html {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 #logoh1 {
-	margin-bottom: 2px !important;
+    margin-bottom: 2px !important;
+}
+
+
+.menu-l2 > a {
+    font-family: "Open Sans Condensed", serif !important;
+    font-weight: bold !important;
+    font-size: 1.1em !important;
+    padding: 2px !important;
+    border-style: none !important;
+    margin: 4px;
+    /*text-transform: uppercase;*/
+}
+
+.menu-l2 a:hover {
+    color: #933A93 !important;
+}
+.semi-transparent {
+    opacity: 0.9;
+    border-top-color: #933A93 !important;
+    border-top-width: 2px;
+    border-top-style: dotted;
+    text-align: center;
+}
+
+.right-border {
+    border-right: black dotted thin;
+}
+
+.menu-l3 a {
+    font-family: "Open Sans Condensed", serif !important;
+    /*font-weight: bold !important;*/
+    font-size: 1.1em !important;
+    padding: 1px !important;
+    border-style: none !important;
+    margin: 3px;
+    background-color: transparent !important;
+    /*text-transform: uppercase;*/
+}
+
+.dropdown h3 {
+    color: #933A93;
+}
+
+.linearBg2 {
+    /* fallback */
+    background-color: #FFFFFF;
+    /*background: url(images/linear_bg_2.png);*/
+    background-repeat: repeat-x;
+
+    /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#D2D2D2), to(#FFFFFF));
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(top, #FFFFFF, #D2D2D2);
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(top, #FFFFFF, #D2D2D2);
+    /* IE 10 */
+    background: -ms-linear-gradient(top, #FFFFFF, #D2D2D2);
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, #FFFFFF, #D2D2D2);
 }
