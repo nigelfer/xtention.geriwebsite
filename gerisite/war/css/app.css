@@ -7,6 +7,7 @@
     .menu-l2 > a {
         display: inline !important;
         color: #333333 !important;
+        background-color: transparent !important;
     }
 
     .menu-l2 {
@@ -32,6 +33,7 @@
     .top-bar .top-bar-section a:HOVER {
         /* 		text-decoration: underline; */
         color: #933A93;
+        background-color: #F8F8F8;
     }
     .top-bar .top-bar-section a.selected {
         color: #933A93 !important;
@@ -435,6 +437,7 @@ html {
 
 .menu-l2 a:hover {
     color: #933A93 !important;
+    /*background-color: #A1A1A1 !important;*/
 }
 .semi-transparent {
     opacity: 0.9;
@@ -463,20 +466,23 @@ html {
     color: #933A93;
 }
 
-.linearBg2 {
+.linearBg2{
+    background-color: #F8F8F8;
+}
+.linearBg3 {
     /* fallback */
     background-color: #FFFFFF;
     /*background: url(images/linear_bg_2.png);*/
     background-repeat: repeat-x;
 
     /* Safari 4-5, Chrome 1-9 */
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#D2D2D2), to(#FFFFFF));
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#A1A1A1), to(#FFFFFF));
     /* Safari 5.1, Chrome 10+ */
-    background: -webkit-linear-gradient(top, #FFFFFF, #D2D2D2);
+    background: -webkit-linear-gradient(top, #FFFFFF, #A1A1A1);
     /* Firefox 3.6+ */
-    background: -moz-linear-gradient(top, #FFFFFF, #D2D2D2);
+    background: -moz-linear-gradient(top, #FFFFFF, #A1A1A1);
     /* IE 10 */
-    background: -ms-linear-gradient(top, #FFFFFF, #D2D2D2);
+    background: -ms-linear-gradient(top, #FFFFFF, #A1A1A1);
     /* Opera 11.10+ */
-    background: -o-linear-gradient(top, #FFFFFF, #D2D2D2);
+    background: -o-linear-gradient(top, #FFFFFF, #A1A1A1);
 }
