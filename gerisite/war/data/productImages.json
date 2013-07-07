@@ -1,0 +1,44 @@
+{
+    "page1": {
+        "folderLocation": "/img/xyz",
+        "productList" : [
+            {
+                "thumbImg":"abc.png",
+                "thumbTitle": "title123",
+                "price" : "100",
+                "img": "abcLarge.png",
+                "desciption":"blah blah",
+                "otherAttributes": "here"
+            },
+            {
+                "thumbImg":"abc.png",
+                "thumbTitle": "title123",
+                "price" : "100",
+                "img": "abcLarge.png",
+                "desciption":"blah blah",
+                "otherAttributes": "here"
+            }
+        ]        
+    },
+    "page2": {
+        "folderLocation": "/img/xyz",
+        "productList" : [
+            {
+                "thumbImg":"abc.png",
+                "thumbTitle": "title123",
+                "price" : "100",
+                "img": "abcLarge.png",
+                "desciption":"blah blah",
+                "otherAttributes": "here"
+            },
+            {
+                "thumbImg":"abc.png",
+                "thumbTitle": "title123",
+                "price" : "100",
+                "img": "abcLarge.png",
+                "desciption":"blah blah",
+                "otherAttributes": "here"
+            }
+        ]        
+    }        
+}
