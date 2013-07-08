@@ -3,10 +3,10 @@
         "folderLocation": "img/retail/indoWesternTunics/",
         "productList": [
             {
-                "img": "DS 729A.jpg",
+                "img": "DS-729A.jpg",
                 "title": "title123",
                 "price": "100",
-                "imgThumb": "DS 729AThumb.jpg",
+                "imgThumb": "DS-729AThumb.jpg",
                 "desciption": "blah blah",
                 "lazy": "false",
                 "otherAttributes": "here"
@@ -25,14 +25,14 @@
             },
             
             {
-                "img": "TS 711B.jpg",
-                "imgThumb": "TS 711BThumb.jpg",
+                "img": "TS-711B.jpg",
+                "imgThumb": "TS-711BThumb.jpg",
                 "lazy": "false",
                 "title": ""
             },
             {
-                "img": "TS 749B.jpg",
-                "imgThumb": "TS 749BThumb.jpg",
+                "img": "TS-749B.jpg",
+                "imgThumb": "TS-749BThumb.jpg",
                 "lazy": "false",
                 "title": ""
             },
