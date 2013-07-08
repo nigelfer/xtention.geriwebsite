@@ -1,44 +1,87 @@
 {
-    "page1": {
-        "folderLocation": "/img/xyz",
-        "productList" : [
+    "retailIndoWesternTunics": {
+        "folderLocation": "img/retail/indoWesternTunics/",
+        "productList": [
             {
-                "thumbImg":"abc.png",
-                "thumbTitle": "title123",
-                "price" : "100",
-                "img": "abcLarge.png",
-                "desciption":"blah blah",
+                "img": "DS 729A.jpg",
+                "title": "title123",
+                "price": "100",
+                "imgThumb": "DS 729AThumb.jpg",
+                "desciption": "blah blah",
+                "lazy": "false",
                 "otherAttributes": "here"
             },
             {
-                "thumbImg":"abc.png",
-                "thumbTitle": "title123",
-                "price" : "100",
-                "img": "abcLarge.png",
-                "desciption":"blah blah",
-                "otherAttributes": "here"
-            }
-        ]        
+                "img": "KW-407.jpg",
+                "imgThumb": "KW-407Thumb.jpg",
+                "lazy": "false",
+                "title": "title123"
+            },
+            {
+                "img": "KW-416.jpg",
+                "imgThumb": "KW-416Thumb.jpg",
+                "lazy": "false",
+                "title": "title123"
+            },
+            
+            {
+                "img": "TS 711B.jpg",
+                "imgThumb": "TS 711BThumb.jpg",
+                "lazy": "false",
+                "title": ""
+            },
+            {
+                "img": "TS 749B.jpg",
+                "imgThumb": "TS 749BThumb.jpg",
+                "lazy": "false",
+                "title": ""
+            },
+            {
+                "img": "X-W-DS-0003B.jpg",
+                "imgThumb": "X-W-DS-0003BThumb.jpg",
+                "lazy": "false",
+                "title": ""
+            },
+            {
+                "img": "X-W-DS-0004A.jpg",
+                "imgThumb": "X-W-DS-0004AThumb.jpg",
+                "lazy": "false",
+                "title": ""
+            },
+
+
+            {
+                "img": "X-W-DS-0004A.jpg",
+                "imgThumb": "X-W-DS-0004AThumb.jpg",
+                "lazy": "false",
+                "title": ""
+            },
+            {
+                "img": "X-W-DS-0004A.jpg",
+                "imgThumb": "X-W-DS-0004AThumb.jpg",
+                "lazy": "true", 
+                "title": ""
+            },
+            {
+                "img": "X-W-DS-0004A.jpg",
+                "imgThumb": "X-W-DS-0004AThumb.jpg",
+                "lazy": "true",
+                "title": ""
+            }            
+            
+        ]
     },
     "page2": {
         "folderLocation": "/img/xyz",
-        "productList" : [
+        "productList": [
             {
-                "thumbImg":"abc.png",
+                "thumbImg": "abc.png",
                 "thumbTitle": "title123",
-                "price" : "100",
+                "price": "100",
                 "img": "abcLarge.png",
-                "desciption":"blah blah",
-                "otherAttributes": "here"
-            },
-            {
-                "thumbImg":"abc.png",
-                "thumbTitle": "title123",
-                "price" : "100",
-                "img": "abcLarge.png",
-                "desciption":"blah blah",
+                "desciption": "blah blah",
                 "otherAttributes": "here"
             }
-        ]        
-    }        
+        ]
+    }
 }

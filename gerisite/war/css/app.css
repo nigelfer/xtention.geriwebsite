@@ -236,6 +236,10 @@ div.orbit-caption {
     padding: 10px 10px !important;
 }
 
+.panelWhite {
+    padding: 11px 11px;
+}
+
 .box_rotate {
     -moz-transform: rotate(90deg); /* FF3.5+ */
     -o-transform: rotate(90deg); /* Opera 10.5 */
