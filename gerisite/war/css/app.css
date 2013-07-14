@@ -490,3 +490,7 @@ html {
     /* Opera 11.10+ */
     background: -o-linear-gradient(top, #FFFFFF, #A1A1A1);
 }
+
+.align-cener {
+	text-align: center;
+}

@@ -4,7 +4,7 @@
         "productList": [
             {
                 "img": "DS-729A.jpg",
-                "title": "title123",
+                "title": "",
                 "price": "100",
                 "imgThumb": "DS-729AThumb.jpg",
                 "desciption": "blah blah",
@@ -14,14 +14,13 @@
             {
                 "img": "KW-407.jpg",
                 "imgThumb": "KW-407Thumb.jpg",
-                "lazy": "false",
-                "title": "title123"
+                "lazy": "false"
             },
             {
                 "img": "KW-416.jpg",
                 "imgThumb": "KW-416Thumb.jpg",
-                "lazy": "false",
-                "title": "title123"
+                "title": "",
+                "lazy": "false"
             },
             
             {
@@ -47,41 +46,145 @@
                 "imgThumb": "X-W-DS-0004AThumb.jpg",
                 "lazy": "false",
                 "title": ""
-            },
-
-
-            {
-                "img": "X-W-DS-0004A.jpg",
-                "imgThumb": "X-W-DS-0004AThumb.jpg",
-                "lazy": "false",
-                "title": ""
-            },
-            {
-                "img": "X-W-DS-0004A.jpg",
-                "imgThumb": "X-W-DS-0004AThumb.jpg",
-                "lazy": "true", 
-                "title": ""
-            },
-            {
-                "img": "X-W-DS-0004A.jpg",
-                "imgThumb": "X-W-DS-0004AThumb.jpg",
-                "lazy": "true",
-                "title": ""
-            }            
+            }
             
         ]
     },
-    "page2": {
-        "folderLocation": "/img/xyz",
+    "retailTopsPlusSize": {
+        "folderLocation": "img/retail/topsPlusSize/",
         "productList": [
             {
-                "thumbImg": "abc.png",
-                "thumbTitle": "title123",
-                "price": "100",
-                "img": "abcLarge.png",
-                "desciption": "blah blah",
-                "otherAttributes": "here"
+                "img": "Kaftan.jpg",
+                "imgThumb": "KaftanThumb.jpg",
+                "lazy": "false"
+            },
+            {
+                "img": "X-W-TP-0001B.jpg",
+                "imgThumb": "X-W-TP-0001BThumb.jpg",
+                "lazy": "false"
+            },
+            {
+            	"img": "X-W-TP-0002.jpg",
+            	"imgThumb": "X-W-TP-0002Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-W-TP-0004B.jpg",
+            	"imgThumb": "X-W-TP-0004BThumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-W-TP-0007.jpg",
+            	"imgThumb": "X-W-TP-0007Thumb.jpg",
+            	"lazy": "false"
+            }
+        ]
+    },
+    "retailTshirtsPlusSize": {
+        "folderLocation": "img/retail/tshirtsPlusSize/",
+        "productList": [
+            {
+                "img": "X-W-TS-0002.jpg",
+                "imgThumb": "X-W-TS-0002Thumb.jpg",
+                "lazy": "false"
+            },
+            {
+            	"img": "X-W-TS-0004.jpg",
+            	"imgThumb": "X-W-TS-0004Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-W-TS-0005.jpg",
+            	"imgThumb": "X-W-TS-0005Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-W-TS-0007.jpg",
+            	"imgThumb": "X-W-TS-0007Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-W-TS-0008.jpg",
+            	"imgThumb": "X-W-TS-0008Thumb.jpg",
+            	"lazy": "false"
+            }
+            
+        ]
+    },
+    "retailWesternDresses": {
+        "folderLocation": "img/retail/westernDresses/",
+        "productList": [
+            {
+                "img": "DS2.jpg",
+                "imgThumb": "DS2Thumb.jpg",
+                "lazy": "false"
+            },
+            {
+            	"img": "X-W-DS-0001C.jpg",
+            	"imgThumb": "X-W-DS-0001CThumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-W-DS-0002A.jpg",
+            	"imgThumb": "X-W-DS-0002AThumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-W-DS-0005A.jpg",
+            	"imgThumb": "X-W-DS-0005AThumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-W-DS-0005B.jpg",
+            	"imgThumb": "X-W-DS-0005BThumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-W-DS-0006A.jpg",
+            	"imgThumb": "X-W-DS-0006AThumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-W-DS-0006B.jpg",
+            	"imgThumb": "X-W-DS-0006BThumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-W-DS-0006Ci.jpg",
+            	"imgThumb": "X-W-DS-0006CiThumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-W-DS-0007A.jpg",
+            	"imgThumb": "X-W-DS-0007AThumb.jpg",
+            	"lazy": "true"
+            },
+            {
+            	"img": "X-W-DS-0007C.jpg",
+            	"imgThumb": "X-W-DS-0007CThumb.jpg",
+            	"lazy": "true"
+            },
+            {
+            	"img": "X-W-DS-0008B.jpg",
+            	"imgThumb": "X-W-DS-0008BThumb.jpg",
+            	"lazy": "true"
+            },            
+            {
+            	"img": "X-W-DS-0010A.jpg",
+            	"imgThumb": "X-W-DS-0010AThumb.jpg",
+            	"lazy": "true"
+            },            
+            {
+            	"img": "X-W-DS-0010C.jpg",
+            	"imgThumb": "X-W-DS-0010CThumb.jpg",
+            	"lazy": "true"
+            },            
+            {
+            	"img": "X-W-DS-0011C.jpg",
+            	"imgThumb": "X-W-DS-0011CThumb.jpg",
+            	"lazy": "true"
             }
         ]
     }
+    
 }
