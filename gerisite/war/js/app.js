@@ -127,6 +127,8 @@ $(function() {
 		var filter = $(this).val(), count = 0;
 
 		if (filter.length == 0) { // if nothing entered, do nothing.
+			$("#filter-count").hide();
+			hideAll();
 			return;
 		} else { // show search section
 			if (searchShown != true) {
@@ -153,6 +155,7 @@ $(function() {
 
 		// Update the count
 		var numberItems = count;
+		$("#filter-count").show();
 		$("#filter-count").text(count + " Search results");
 	});
 
