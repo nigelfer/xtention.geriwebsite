@@ -27,6 +27,7 @@ $(function() {
 	$jewellery = $('#products_jewellery');
 	$contact = $('#contact');
 	$search = $('#searchSection');
+	$anarkali = $('#products_anarkali_kurtis');
 
 	var hideAll = function() {
 		$home.hide();
@@ -40,6 +41,7 @@ $(function() {
 		$contact.hide();
 		$search.hide();
 		$tops.hide();
+		$anarkali.hide();
 	};
 
 	hideAll();
@@ -75,8 +77,9 @@ $(function() {
 	$.History.bind('/products/western', function(state) {
 		hideAll();
 		closeMenu();
-//		$western.load('western.html');
-		displayPageProducts('retailWesternDresses', '#products_western');
+		// $western.load('western.html');
+		displayPageProducts('retailWesternDresses', '#products_western',
+				'Western Dresses');
 		$western.stop(true, true).fadeIn(200);
 		searchShown = false;
 	});
@@ -84,21 +87,32 @@ $(function() {
 		hideAll();
 		closeMenu();
 		// $tunics.load('tunics.html');
-		displayPageProducts('retailIndoWesternTunics', '#products_tunics');
+		displayPageProducts('retailIndoWesternTunics', '#products_tunics',
+				'Indo Western Tunics');
 		$tunics.stop(true, true).fadeIn(200);
 		searchShown = false;
 	});
 	$.History.bind('/products/tops', function(state) {
 		hideAll();
 		closeMenu();
-		displayPageProducts('retailTopsPlusSize', '#products_tops');
+		displayPageProducts('retailTopsPlusSize', '#products_tops',
+				'Tops Plus Size');
 		$tops.stop(true, true).show();
+		searchShown = false;
+	});
+	$.History.bind('/products/AnarkaliKurtis', function(state) {
+		hideAll();
+		closeMenu();
+		displayPageProducts('wholesaleAnarkaliKurtis',
+				'#products_anarkali_kurtis', 'Anarkali Kurtis');
+		$anarkali.stop(true, true).show();
 		searchShown = false;
 	});
 	$.History.bind('/products/tshirts', function(state) {
 		hideAll();
 		closeMenu();
-		displayPageProducts('retailTshirtsPlusSize', '#products_tshirts');
+		displayPageProducts('retailTshirtsPlusSize', '#products_tshirts',
+				'Tshirts Plus Size');
 		$tshirts.stop(true, true).fadeIn(200);
 		searchShown = false;
 
@@ -129,12 +143,15 @@ $(function() {
 		if (filter.length == 0) { // if nothing entered, do nothing.
 			$("#filter-count").hide();
 			hideAll();
+			$('.clear-search').hide();
+			searchShown = false;
 			return;
 		} else { // show search section
 			if (searchShown != true) {
 				hideAll();
 				$search.stop(true, true).fadeIn(200);
 				searchShown = true;
+				$('.clear-search').show();
 			}
 		}
 
@@ -159,6 +176,18 @@ $(function() {
 		$("#filter-count").text(count + " Search results");
 	});
 
+	$('#clear-search-id').click(function() {
+		$("#filter-count").hide();
+		hideAll();
+		$('.clear-search').hide();
+		$("#filter").val('');
+		searchShown = false;
+	});
+
+	$("#filter").blur(function() {
+		$("#filter-count").hide();
+	});
+
 	// temporary partial IE fix to remove space beneath footer
 	// caused due to overflow-y:scroll
 	$('html').css('height', '99.9%');
@@ -173,24 +202,32 @@ function closeMenu() {
 }
 
 // ######## generate images on page
-function displayPageProducts(pageName, htmlName) {
+function displayPageProducts(pageName, htmlName, titleName) {
 	var numberDivs = $(htmlName + ' .product_list').find('div').size();
-	if (numberDivs === 0) { //not loaded page yet.
-		$.getJSON('data/productImages.json', function(data) {
-			var pageData = data[pageName];
-			var folder = pageData.folderLocation;
-			var productList = pageData.productList;
+	if (numberDivs === 0) { // not loaded page yet.
+		$
+				.getJSON(
+						'data/productImages.json',
+						function(data) {
+							var pageData = data[pageName];
+							var folder = pageData.folderLocation;
+							var productList = pageData.productList;
 
-			var content = "";
-			$.each(productList, function(i, product) {
-				content += displayProductThumb(i, product, folder);
-			});
-			$(htmlName + ' .product_list').append(content);
+							var content = "";
+							content += "<div class='row'><div class='large-3 small-10 columns hbghead_title'>"
+									+ "<h5 class='innerhead'>"
+									+ titleName
+									+ "</h5></div></div>";
+							$.each(productList, function(i, product) {
+								content += displayProductThumb(i, product,
+										folder);
+							});
+							$(htmlName + ' .product_list').append(content);
 
-			$("img.lazy").lazyload();
-		}).fail(function() {
-			console.log("error");
-		});
+							$("img.lazy").lazyload();
+						}).fail(function() {
+					console.log("error");
+				});
 	}
 }
 

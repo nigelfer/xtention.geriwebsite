@@ -183,7 +183,67 @@
             	"img": "X-W-DS-0011C.jpg",
             	"imgThumb": "X-W-DS-0011CThumb.jpg",
             	"lazy": "true"
-            }
+            }         
+        ]
+    },
+    "wholesaleAnarkaliKurtis": {
+        "folderLocation": "img/wholesale/anarkaliKurtis/",
+        "productList": [
+            {
+                "img": "X-DK-K-102A1500.jpg",
+                "imgThumb": "X-DK-K-102A1500Thumb.jpg",
+                "lazy": "false"
+            },
+            {
+            	"img": "X-DK-K-103A1335.jpg",
+            	"imgThumb": "X-DK-K-103A1335Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-DK-K-104A1615.jpg",
+            	"imgThumb": "X-DK-K-104A1615Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-DK-K-105A1615.jpg",
+            	"imgThumb": "X-DK-K-105A1615Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-DK-K-108A1565.jpg",
+            	"imgThumb": "X-DK-K-108A1565Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-DK-K-110A1575.jpg",
+            	"imgThumb": "X-DK-K-110A1575Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-DK-K-112A1310.jpg",
+            	"imgThumb": "X-DK-K-112A1310Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-DK-K-113A1575.jpg",
+            	"imgThumb": "X-DK-K-113A1575Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-DK-K-115A1310.jpg",
+            	"imgThumb": "X-DK-K-115A1310Thumb.jpg",
+            	"lazy": "true"
+            },
+            {
+            	"img": "X-DK-K-117A1115.jpg",
+            	"imgThumb": "X-DK-K-117A1115Thumb.jpg",
+            	"lazy": "true"
+            },
+            {
+            	"img": "X-DK-K-118A1465.jpg",
+            	"imgThumb": "X-DK-K-118A1465Thumb.jpg",
+            	"lazy": "true"
+            }                    
         ]
     }
     
