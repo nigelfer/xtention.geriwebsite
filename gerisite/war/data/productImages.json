@@ -245,6 +245,51 @@
             	"lazy": "true"
             }                    
         ]
+    },
+    "jewellery": {
+        "folderLocation": "img/jewellery/",
+        "productList": [
+            {
+                "img": "20130214_143017.jpg",
+                "imgThumb": "20130214_143017Thumb.jpg",
+                "lazy": "false"
+            },
+            {
+            	"img": "20130214_143136.jpg",
+            	"imgThumb": "20130214_143136Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "20130214_143327.jpg",
+            	"imgThumb": "20130214_143327Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "20130214_143535.jpg",
+            	"imgThumb": "20130214_143535Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "20130214_143701.jpg",
+            	"imgThumb": "20130214_143701Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "20130214_143834.jpg",
+            	"imgThumb": "20130214_143834Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "20130214_144051.jpg",
+            	"imgThumb": "20130214_144051Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "20130214_144440.jpg",
+            	"imgThumb": "20130214_144440Thumb.jpg",
+            	"lazy": "false"
+            }
+        ]
     }
     
 }

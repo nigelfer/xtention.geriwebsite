@@ -120,7 +120,7 @@ $(function() {
 	$.History.bind('/products/jewellery', function(state) {
 		hideAll();
 		closeMenu();
-		$jewellery.load('jewellery.html');
+		displayPageProducts('jewellery', '#products_jewellery', 'Jewellery');
 		$jewellery.stop(true, true).show();
 		searchShown = false;
 
@@ -244,11 +244,11 @@ function displayProductThumb(index, product, folder) {
 	content += '<a href="' + folder + product.img + '" target="_blank">';
 
 	if (product.lazy === 'true') {
-		content += '<img class="lazy" src="img/grey.gif" data-original="'
+		content += '<img class="lazy prodimg" src="img/grey.gif" data-original="'
 				+ folder + product.imgThumb + '" max-width="220px"/>';
 	} else {
 		content += '<img src="' + folder + product.imgThumb
-				+ '" max-width="220px"/>';
+				+ '" max-width="220px" class="prodimg"/>';
 	}
 	content += '</a>';
 	if ((product.title !== "") && (product.title !== undefined)) {
