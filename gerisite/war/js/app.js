@@ -192,6 +192,16 @@ $(function() {
 	// caused due to overflow-y:scroll
 	$('html').css('height', '99.9%');
 
+	// move spotlight
+	$('#bifId-outer').mousemove(function(e) {
+		var spot = $('#bifId');
+		if ((e.pageX > 100) && (e.pageX < 1000)) {
+			spot.stop().animate({
+				'left' : e.pageX -100
+			});
+		}
+	});
+
 });
 
 function closeMenu() {
