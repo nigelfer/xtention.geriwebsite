@@ -69,7 +69,17 @@ $(function() {
 	$.History.bind('/products/kurtis', function(state) {
 		hideAll();
 		closeMenu();
-		$kurtis.load('kurtis.html');
+		// $kurtis.load('kurtis.html');
+		displayPageProducts('retailCottonKurtis', '#Cotton-Kurtis',
+				'Cotton Kurtis');
+		displayPageProducts('retailCottonKurtisPlus', '#Cotton-Kurtis-PLUS',
+				'Cotton Kurtis:PLUS size');
+		displayPageProducts('retailGeorgetteKurtisPlus', '#Georgette-Kurtis',
+				'Georgette Kurtis:PLUS size');
+		displayPageProducts('retailLinenKurtis', '#linen-kurtis',
+				'Linen Kurtis');
+		// ...
+
 		$kurtis.stop(true, true).show();
 		// $kurtis.show();
 		searchShown = false;
@@ -197,9 +207,22 @@ $(function() {
 		var spot = $('#bifId');
 		if ((e.pageX > 100) && (e.pageX < 1000)) {
 			spot.stop().animate({
-				'left' : e.pageX -100
+				'left' : e.pageX - 100
 			});
 		}
+	});
+
+	// page smooth scrolling
+	$(function() {
+		$('a.scroll').click(function(e) {
+			e.preventDefault(); // prevent the "normal" behaviour which would be
+			// a "hard" jump
+			if ($(this).prop('back') != 'true') {
+				$('a.scroll').parent().removeClass('active');
+				$(this).parent().addClass('active');
+			}
+			scrollTo($(this));
+		});
 	});
 
 });
@@ -273,4 +296,28 @@ function displayProductThumb(index, product, folder) {
 	content += '</div>'; // column
 
 	return content;
+}
+
+function scrollTo(ahref) {
+	var target = ahref.attr("href"); // Get the target
+	if ($(target).length != 0) {
+		var top = $(target).offset().top;
+		// perform animated scrolling by getting top-position of target-element
+		// and set it as scroll target
+		$('html, body').stop().animate({
+			scrollTop : top
+		}, 1000, function() {
+			location.hash = target; // attach the hash (#jumptarget) to the
+			// pageurl
+		});
+
+		// alert(top);
+		// alert(document.body.clientHeight);
+		// $('a.scroll').attr("href").css('background-color', 'white');
+		// var viewableHeight = document.body.clientHeight;
+		// if (top < viewableHeight) {
+		// $(target).css('background-color', 'yellow');
+		// }
+	}
+	return false;
 }

@@ -290,6 +290,162 @@
             	"lazy": "false"
             }
         ]
+    },
+    "retailCottonKurtis": {
+        "folderLocation": "img/retail/kurtis/cottonKurtis/",
+        "productList": [
+            {
+                "img": "20130620_152033.jpg",
+                "imgThumb": "20130620_152033Thumb.jpg",
+                "lazy": "false"
+            },
+            {
+            	"img": "20130620_152245.jpg",
+            	"imgThumb": "20130620_152245Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "k2.jpg",
+            	"imgThumb": "k2Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "k4.jpg",
+            	"imgThumb": "k4Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "k7.jpg",
+            	"imgThumb": "k7Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "TS-728Bb.jpg",
+            	"imgThumb": "TS-728BbThumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-S-K-106.jpg",
+            	"imgThumb": "X-S-K-106Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-S-K-117.jpg",
+            	"imgThumb": "X-S-K-117Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-S-K-119.jpg",
+            	"imgThumb": "X-S-K-119Thumb.jpg",
+            	"lazy": "true"
+            }
+        ]
+    },
+    "retailCottonKurtisPlus": {
+        "folderLocation": "img/retail/kurtis/cottonKurtisPlus/",
+        "productList": [
+            {
+                "img": "X-I-KA-0015A.jpg",
+                "imgThumb": "X-I-KA-0015AThumb.jpg",
+                "lazy": "true"
+            },
+            {
+            	"img": "X-I-KA-0016.jpg",
+            	"imgThumb": "X-I-KA-0016Thumb.jpg",
+            	"lazy": "true"
+            },
+            {
+            	"img": "X-I-KA-0017.jpg",
+            	"imgThumb": "X-I-KA-0017Thumb.jpg",
+            	"lazy": "true"
+            },
+            {
+            	"img": "X-I-KA-0018.jpg",
+            	"imgThumb": "X-I-KA-0018Thumb.jpg",
+            	"lazy": "true"
+            },
+            {
+            	"img": "X-I-KA-0019.jpg",
+            	"imgThumb": "X-I-KA-0019Thumb.jpg",
+            	"lazy": "true"
+            },
+            {
+            	"img": "X-I-KI-0009B.jpg",
+            	"imgThumb": "X-I-KI-0009BThumb.jpg",
+            	"lazy": "true"
+            },
+            {
+            	"img": "X-I-KI-0011.jpg",
+            	"imgThumb": "X-I-KI-0011Thumb.jpg",
+            	"lazy": "true"
+            },
+            {
+            	"img": "X-I-KI-0012.jpg",
+            	"imgThumb": "X-I-KI-0012Thumb.jpg",
+            	"lazy": "true"
+            }        
+        ]
+    },
+    "retailGeorgetteKurtisPlus": {
+        "folderLocation": "img/retail/kurtis/georgetteKurtisPlus/",
+        "productList": [
+            {
+                "img": "X-I-DK-0002.jpg",
+                "imgThumb": "X-I-DK-0002Thumb.jpg",
+                "lazy": "true"
+            },
+            {
+            	"img": "X-I-DK-0008.jpg",
+            	"imgThumb": "X-I-DK-0008Thumb.jpg",
+            	"lazy": "true"
+            },
+            {
+            	"img": "X-I-DK-0009.jpg",
+            	"imgThumb": "X-I-DK-0009Thumb.jpg",
+            	"lazy": "true"
+            },
+            {
+            	"img": "X-I-DK-0012.jpg",
+            	"imgThumb": "X-I-DK-0012Thumb.jpg",
+            	"lazy": "true"
+            },
+            {
+            	"img": "X-I-DK-0015.jpg",
+            	"imgThumb": "X-I-DK-0015Thumb.jpg",
+            	"lazy": "true"
+            },
+            {
+            	"img": "X-I-DK-0016.jpg",
+            	"imgThumb": "X-I-DK-0016Thumb.jpg",
+            	"lazy": "true"
+            }            
+            
+        ]
+    },
+    "retailLinenKurtis": {
+        "folderLocation": "img/retail/kurtis/linenKurtis/",
+        "productList": [
+            {
+                "img": "KS-331.jpg",
+                "imgThumb": "KS-331Thumb.jpg",
+                "lazy": "true"
+            },
+            {
+            	"img": "TS-317.jpg",
+            	"imgThumb": "TS-317Thumb.jpg",
+            	"lazy": "true"
+            },
+            {
+            	"img": "TS-317A.jpg",
+            	"imgThumb": "TS-317AThumb.jpg",
+            	"lazy": "true"
+            },
+            {
+            	"img": "TS-360.jpg",
+            	"imgThumb": "TS-360Thumb.jpg",
+            	"lazy": "true"
+            }
+        ]
     }
     
 }
