@@ -3439,19 +3439,19 @@ form.custom .custom.disabled {
     padding: 15px; }
   .top-bar-section .has-dropdown {
     position: relative; }
-    .top-bar-section .has-dropdown > a:after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 0;
-      border: inset 5px;
-      border-color: transparent transparent transparent rgba(255, 255, 255, 0.5);
-      border-left-style: solid;
-      margin-right: 15px;
-      margin-top: -4.5px;
-      position: absolute;
-      top: 50%;
-      right: 0; }
+/*     .top-bar-section .has-dropdown > a:after { */
+/*       content: ""; */
+/*       display: block; */
+/*       width: 0; */
+/*       height: 0; */
+/*       border: inset 5px; */
+/*       border-color: transparent transparent transparent rgba(255, 255, 255, 0.5); */
+/*       border-left-style: solid; */
+/*       margin-right: 15px; */
+/*       margin-top: -4.5px; */
+/*       position: absolute; */
+/*       top: 50%; */
+/*       right: 0; } */
     .top-bar-section .has-dropdown.moved {
       position: static; }
       .top-bar-section .has-dropdown.moved > .dropdown {
@@ -3539,18 +3539,18 @@ form.custom .custom.disabled {
       background: #111111; }
       .top-bar-section li a:not(.button).hover {
         background: black; }
-    .top-bar-section .has-dropdown > a {
-      padding-right: 35px !important; }
-      .top-bar-section .has-dropdown > a:after {
-        content: "";
-        display: block;
-        width: 0;
-        height: 0;
-        border: inset 5px;
-        border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent;
-        border-top-style: solid;
-        margin-top: -2.5px;
-        top: 22.5px; }
+/*     .top-bar-section .has-dropdown > a { */
+/*       padding-right: 35px !important; } */
+/*       .top-bar-section .has-dropdown > a:after { */
+/*         content: ""; */
+/*         display: block; */
+/*         width: 0; */
+/*         height: 0; */
+/*         border: inset 5px; */
+/*         border-color: rgba(255, 255, 255, 0.5) transparent transparent transparent; */
+/*         border-top-style: solid; */
+/*         margin-top: -2.5px; */
+/*         top: 22.5px; } */
     .top-bar-section .has-dropdown.moved {
       position: relative; }
       .top-bar-section .has-dropdown.moved > .dropdown {
