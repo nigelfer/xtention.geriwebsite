@@ -35,8 +35,24 @@
 <!-- Application CSS -->
 <link rel="stylesheet" href="css/app.css" />
 
+<script>
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function() {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	ga('create', 'UA-42897599-1', 'xtensionenterprises.com');
+	ga('send', 'pageview');
+</script>
+
 </head>
-<body>
+<body class="">
 	<!--####### MENU ################-->
 
 	<div id="wrapper">
@@ -44,77 +60,89 @@
 		<div id="header" class="row">
 			<div id="main_head_row">
 				<div class="large-4 small-7 small-centered large-uncentered columns">
-					<a href="index.html"> <img src="img/logo_white1.png" />
+					<a href="index.html">
+						<img src="img/logo_white1.png" />
 					</a>
 				</div>
 				<div class="large-8 columns">
 
 					<div class="row">
 						<div class="large-12 columns">
-							<nav class="top-bar top-bar-style gradient_black"
-								style="border-radius: 40px;"
-							>
+							<nav class="top-bar top-bar-style gradient_black" style="border-radius: 40px;">
 								<ul id="ie8menu" class="title-area">
 									<!--Title Area -->
 									<li class="name"></li>
 									<!--Remove the class 
          "menu-icon  " to get rid of menu icon  . Take out   "Menu  " to just have icon alone -->
-									<li class="toggle-topbar menu-icon"><a href="#"> <span>Menu
-										</span>
-									</a></li>
+									<li class="toggle-topbar menu-icon">
+										<a href="#">
+											<span>Menu </span>
+										</a>
+									</li>
 								</ul>
 								<section class="top-bar-section">
 									<!--Left Nav Section -->
 									<ul id="ie8menu" class="left">
-										<li class="has-dropdown menu-top-font"><a
-											class="mob-but-menu" href="#/products/retail"
-										>RETAIL </a>
-											<ul class="dropdown">
-												<li class=""><a class="menu-sub-font mob-but-menu"
-													href="#/products/tunics"
-												>Indo Western Tunics</a></li>
-												<li class="divider show-for-small"></li>
-												<li class=""><a class="menu-sub-font mob-but-menu"
-													href="#/products/tops"
-												>Tops - Plus Size</a></li>
-												<li class="divider show-for-small"></li>
-												<li><a class="menu-sub-font mob-but-menu" href="#/products/tshirts">T-Shirts
-														- PLUS Size</a></li>
-												<li class="divider show-for-small"></li>
-												<li><a class="menu-sub-font mob-but-menu" href="#/products/kurtis">Kurtis</a></li>
-												<li class="divider show-for-small"></li>
-												<li><a class="menu-sub-font mob-but-menu" href="#/products/western">Western
-														Dresses</a></li>
-											</ul></li>
-										<li class="divider show-for-small"></li>
-
-										<li class="has-dropdown menu-top-font"><a
-											class="mob-but-menu" href="#/products/wholesale"
-										>WHOLESALE</a>
+										<li class="has-dropdown">
+											<a class="mob-but-menu menu-top-font" href="#/products/retail">RETAIL </a>
 											<ul class="dropdown">
 												<li class="">
-												<li><a class="menu-sub-font mob-but-menu"
-													href="#/products/AnarkaliKurtis"
-												>Anarkali Kurtis</a></li>
+													<a class="menu-sub-font mob-but-menu" href="#/products/tunics">Indo
+														Western Tunics</a>
+												</li>
 												<li class="divider show-for-small"></li>
-												<li><a class="menu-sub-font mob-but-menu"
-													href="#/products/CottonKurtis"
-												>Cotton Kurtis</a></li>
+												<li class="">
+													<a class="menu-sub-font mob-but-menu" href="#/products/tops">Tops - Plus
+														Size</a>
+												</li>
 												<li class="divider show-for-small"></li>
-												<li><a class="menu-sub-font mob-but-menu"
-													href="#/products/HandloomKurtis"
-												>Handloom Kurtis</a></li>
-											</ul></li>
+												<li>
+													<a class="menu-sub-font mob-but-menu" href="#/products/tshirts">T-Shirts
+														- PLUS Size</a>
+												</li>
+												<li class="divider show-for-small"></li>
+												<li>
+													<a class="menu-sub-font mob-but-menu" href="#/products/kurtis">Kurtis</a>
+												</li>
+												<li class="divider show-for-small"></li>
+												<li>
+													<a class="menu-sub-font mob-but-menu" href="#/products/western">Western
+														Dresses</a>
+												</li>
+											</ul>
+										</li>
 										<li class="divider show-for-small"></li>
 
-										<li class="has-dropdown menu-top-font"><a
-											class="mob-but-menu" href="#/products/accessories"
-										>ACCESSORIES</a>
+										<li class="has-dropdown">
+											<a class="mob-but-menu menu-top-font" href="#/products/wholesale">WHOLESALE</a>
 											<ul class="dropdown">
-												<li><a class="menu-sub-font"
-													href="#/products/jewellery"
-												>Jewellery</a></li>
-											</ul></li>
+												<li class="">
+												<li>
+													<a class="menu-sub-font mob-but-menu" href="#/products/AnarkaliKurtis">Anarkali
+														Kurtis</a>
+												</li>
+												<li class="divider show-for-small"></li>
+												<li>
+													<a class="menu-sub-font mob-but-menu" href="#/products/CottonKurtis">Cotton
+														Kurtis</a>
+												</li>
+												<li class="divider show-for-small"></li>
+												<li>
+													<a class="menu-sub-font mob-but-menu" href="#/products/HandloomKurtis">Handloom
+														Kurtis</a>
+												</li>
+											</ul>
+										</li>
+										<li class="divider show-for-small"></li>
+
+										<li class="has-dropdown">
+											<a class="mob-but-menu menu-top-font" href="#/products/accessories">ACCESSORIES</a>
+											<ul class="dropdown">
+												<li>
+													<a class="menu-sub-font mob-but-menu" href="#/products/jewellery">Jewellery</a>
+												</li>
+											</ul>
+										</li>
 										<li class="divider"></li>
 									</ul>
 									<ul id="ie8menu" class="right">
@@ -128,23 +156,20 @@
 													title="clear search" 
 													></img> 
 												</div> -->
-												<div id="filter-count" class="invisible"
-													style="background-color: white;"
-												>&nbsp;</div>
+												<div id="filter-count" class="invisible" style="background-color: white; position: absolute; left:5px; top: 30px;">&nbsp;</div>
 											</div>
 										</li>
 										<li class="divider show-for-small"></li>
 
-										<li class="has-form"
-											style="padding-top: 0px; padding-bottom: 0px;"
-										><a
-											href="https://www.facebook.com/pages/Xtension/337105089720817"
-											target="_blank" data-tooltip
-											data-options="disable-for-touch:true"
-											class="has-tip tip-bottom" title="Visit our facebook page"
-											style="height: 40px; text-decoration: none; border: none; padding: 0px; min-height: 25px;"
-										> <i id="fbimg" class="Socialfoundicon-facebook"></i>
-										</a></li>
+										<li class="has-form" style="padding-top: 0px; padding-bottom: 0px;">
+											<a href="https://www.facebook.com/pages/Xtension/337105089720817"
+												target="_blank" data-tooltip data-options="disable-for-touch:true"
+												class="has-tip tip-bottom" title="Visit our facebook page"
+												style="height: 40px; text-decoration: none; border: none; padding: 0px; min-height: 25px;"
+											>
+												<i id="fbimg" class="Socialfoundicon-facebook"></i>
+											</a>
+										</li>
 									</ul>
 								</section>
 							</nav>
@@ -171,26 +196,27 @@
 							<ul data-orbit id="slideshowContainer"
 								data-options="timer_speed:10000; resume_on_mouseout: true;"
 							>
-								<li><img src="img/slideshow/1.png" /> <!-- IMages LAZY loaded -->
-									<div class="orbit-caption">Indian Kurtis in Cotton</div></li>
-								<li><img class="lazy" src="img/grey.gif"
-									data-original="img/slideshow/6.jpg"
-								/>
-									<div class="orbit-caption">Georgette Kurtis</div></li>
-								<li><img class="lazy" src="img/grey.gif"
-									data-original="img/slideshow/7.png"
-								/>
-									<div class="orbit-caption">Western Tops in Chiffon ,
-										Georgette & Lace</div></li>
-								<li><img class="lazy" src="img/grey.gif"
-									data-original="img/slideshow/9.png"
-								/>
-									<div class="orbit-caption">Western dresses</div></li>
-								<li><img class="lazy" src="img/grey.gif"
-									data-original="img/slideshow/13.jpg"
-								/>
-									<div class="orbit-caption">Jewellery – Semi Precious
-										Stones</div></li>
+								<li>
+									<img src="img/slideshow/1.png" />
+									<!-- IMages LAZY loaded -->
+									<div class="orbit-caption">Indian Kurtis in Cotton</div>
+								</li>
+								<li>
+									<img class="lazy" src="img/grey.gif" data-original="img/slideshow/6.jpg" />
+									<div class="orbit-caption">Georgette Kurtis</div>
+								</li>
+								<li>
+									<img class="lazy" src="img/grey.gif" data-original="img/slideshow/7.png" />
+									<div class="orbit-caption">Western Tops in Chiffon , Georgette & Lace</div>
+								</li>
+								<li>
+									<img class="lazy" src="img/grey.gif" data-original="img/slideshow/9.png" />
+									<div class="orbit-caption">Western dresses</div>
+								</li>
+								<li>
+									<img class="lazy" src="img/grey.gif" data-original="img/slideshow/13.jpg" />
+									<div class="orbit-caption">Jewellery – Semi Precious Stones</div>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -207,13 +233,11 @@
 							<!-- 							<h1 class="quote inline auto_margin">in</h1> -->
 							<!-- 							<span>&nbsp;</span> -->
 							<!-- 							<h1 class="color_white inline auto_margin">FASHION</h1> -->
-							<h1 class="color_white inline auto_margin txt-shadow">BIG in
-								FASHION</h1>
+							<h1 class="color_white inline auto_margin txt-shadow">BIG in FASHION</h1>
 						</div>
 						<div class="large-6 columns">
-							<p class="color_white align_left auto_margin">To be BIG in
-								Fashion and the preferred choice for customers in the domestic
-								and international markets</p>
+							<p class="color_white align_left auto_margin">To be BIG in Fashion and the
+								preferred choice for customers in the domestic and international markets</p>
 						</div>
 						<div id="bifId"></div>
 					</div>
@@ -238,13 +262,11 @@
 					</div>
 					<div class="large-5 columns">
 						<h4 class="first-let">The Company</h4>
-						<p>XTENSION, our retail outlet started in December 2012 for
-							regular and PLUS size women who like stylish, trendy and
-							comfortable clothing.</p>
-						<p>While our retail space is fairly new, we have been in the
-							garment industry for the last 20 years and have done work for
-							quite a few fashion houses in Europe and the Gulf. We have also
-							done work for large well known retail outlets in India.</p>
+						<p>XTENSION, our retail outlet started in December 2012 for regular and PLUS
+							size women who like stylish, trendy and comfortable clothing.</p>
+						<p>While our retail space is fairly new, we have been in the garment industry
+							for the last 20 years and have done work for quite a few fashion houses in Europe
+							and the Gulf. We have also done work for large well known retail outlets in India.</p>
 					</div>
 					<div class="large-3 columns">
 						<h4 class="first-let">Our Services</h4>
@@ -271,13 +293,11 @@
 				<div class="row">
 					<div class="large-12 columns">
 						<br>
-						<p>XTENSION, our retail outlet started in December 2012 for
-							regular and PLUS size women who like stylish, trendy and
-							comfortable clothing.</p>
-						<p>While our retail space is fairly new, we have been in the
-							garment industry for the last 20 years and have done work for
-							quite a few fashion houses in Europe and the Gulf. We have also
-							done work for large well known retail outlets in India.</p>
+						<p>XTENSION, our retail outlet started in December 2012 for regular and PLUS
+							size women who like stylish, trendy and comfortable clothing.</p>
+						<p>While our retail space is fairly new, we have been in the garment industry
+							for the last 20 years and have done work for quite a few fashion houses in Europe
+							and the Gulf. We have also done work for large well known retail outlets in India.</p>
 					</div>
 				</div>
 			</div>
@@ -342,12 +362,10 @@
 								<a href="#Cotton-Kurtis" class="scroll">Cotton</a>
 							</dd>
 							<dd class="">
-								<a href="#Cotton-Kurtis-PLUS" class="scroll">Cotton:PLUS
-									size</a>
+								<a href="#Cotton-Kurtis-PLUS" class="scroll">Cotton:PLUS size</a>
 							</dd>
 							<dd>
-								<a href="#Georgette-Kurtis" class="scroll">Georgette:PLUS
-									size</a>
+								<a href="#Georgette-Kurtis" class="scroll">Georgette:PLUS size</a>
 							</dd>
 							<dd>
 								<a href="#linen-kurtis" class="scroll">Linen</a>
@@ -358,37 +376,41 @@
 
 				<div id="Cotton-Kurtis" class="row">
 					<div class="product_list"></div>
-					<a href="#retail_kurtis_page_top" class="scroll mob-anchor"
-						back="true"
-					>back to top</a>
+					<a href="#retail_kurtis_page_top" class="scroll mob-anchor" back="true">back to
+						top</a>
 					<p>&nbsp;</p>
 				</div>
 				<div id="Cotton-Kurtis-PLUS" class="row">
 					<div class="product_list"></div>
-					<a href="#retail_kurtis_page_top" class="scroll mob-anchor"
-						back="true"
-					>back to top</a>
+					<a href="#retail_kurtis_page_top" class="scroll mob-anchor" back="true">back to
+						top</a>
 					<p>&nbsp;</p>
 				</div>
 				<div id="Georgette-Kurtis" class="row">
 					<div class="product_list"></div>
-					<a href="#retail_kurtis_page_top" class="scroll mob-anchor"
-						back="true"
-					>back to top</a>
+					<a href="#retail_kurtis_page_top" class="scroll mob-anchor" back="true">back to
+						top</a>
 					<p>&nbsp;</p>
 				</div>
 				<div id="linen-kurtis" class="row">
 					<div class="product_list"></div>
-					<a href="#retail_kurtis_page_top" class="scroll mob-anchor"
-						back="true"
-					>back to top</a>
+					<a href="#retail_kurtis_page_top" class="scroll mob-anchor" back="true">back to
+						top</a>
 					<p>&nbsp;</p>
 				</div>
 
 			</div>
 
-			<!--#######  Anarkali page #######  -->
+			<!--#######  wholesale: Anarkali page #######  -->
 			<div id="products_anarkali_kurtis">
+				<div class="product_list"></div>
+			</div>
+			<!--#######  wholesale: cotton kurtis page #######  -->
+			<div id="products_wholesale_cotton_kurtis">
+				<div class="product_list"></div>
+			</div>
+			<!--#######  wholesale: Handloom kurtis page #######  -->
+			<div id="products_wholesale_handloom_kurtis">
 				<div class="product_list"></div>
 			</div>
 
@@ -408,59 +430,53 @@
 						<br>
 						<ul class="searchdata">
 							<li>
-								<p class="margin4">Xtension Enterprises | To be BIG in
-									Fashion and the preferred choice for customers in the domestic
-									and international markets
+								<p class="margin4">Xtension Enterprises | To be BIG in Fashion and the
+									preferred choice for customers in the domestic and international markets
 								<p>
-									<a href="">home page</a> <br>
+									<a href="">home page</a>
+									<br>
 							</li>
 							<li>
-								<p class="margin4">Mission: Specialize in PLUS sizes/ Be a
-									market leader in value retailing /Provide fashionable products
-									at affordable prices/ Maintain the best quality standards/ Be
-									innovative, cost effective and globally competitive/ Exceed our
-									customers’ expectations
+								<p class="margin4">Mission: Specialize in PLUS sizes/ Be a market leader in
+									value retailing /Provide fashionable products at affordable prices/ Maintain the
+									best quality standards/ Be innovative, cost effective and globally competitive/
+									Exceed our customers’ expectations
 								<p>
 									<a href="">home page</a>
 							</li>
 							<li>
-								<p class="margin4">Our Services: Customized outfits/
-									Alteration/ Developing digital prints for fabrics /Bulk orders
-									for domestic and international markets
+								<p class="margin4">Our Services: Customized outfits/ Alteration/ Developing
+									digital prints for fabrics /Bulk orders for domestic and international markets
 								<p>
 									<a href="">home page</a>
 							</li>
 							<li>
-								<p class="margin4">The Company, XTENSION, our retail outlet
-									started in December 2012 for regular and PLUS size women who
-									like stylish, trendy and comfortable clothing. While our retail
-									space is fairly new, we have been in the garment industry for
-									the last 20 years and have done work for quite a few fashion
-									houses in Europe and the Gulf. We have also done work for large
-									well known retail outlets in India.
+								<p class="margin4">The Company, XTENSION, our retail outlet started in
+									December 2012 for regular and PLUS size women who like stylish, trendy and
+									comfortable clothing. While our retail space is fairly new, we have been in the
+									garment industry for the last 20 years and have done work for quite a few fashion
+									houses in Europe and the Gulf. We have also done work for large well known retail
+									outlets in India.
 								<p>
 									<a href="#/about">about page</a>
 							</li>
 							<li>
-								<p class="margin4">Help | contact | not working | mail |
-									telephone | talk | chat | Note: this website is best viewed in
-									IE9+ or the latest versions of Chrome & Firefox. On dektop or
-									mobile | phone: 919833388608 India number | email:
-									xtension.enterprises@gmail.com | address: Shop No.3, Abhishek
-									Apts, (Next to Vijay Sales) S.V.Road, Irla Bridge ,Andheri(W)
-									Mumbai 400058, India
+								<p class="margin4">Help | contact | not working | mail | telephone | talk |
+									chat | Note: this website is best viewed in IE9+ or the latest versions of Chrome
+									& Firefox. On dektop or mobile | phone: 919833388608 India number | email:
+									xtension.enterprises@gmail.com | address: Shop No.3, Abhishek Apts, (Next to
+									Vijay Sales) S.V.Road, Irla Bridge ,Andheri(W) Mumbai 400058, India
 								<p>
 									<a href="#/contact">contact page</a>
 							</li>
 							<li>
-								<p class="margin4">Site was designed by NIGEL in Responsive
-									fashion, based on the excellent Foundaion framework by Zurb
+								<p class="margin4">Site was designed by NIGEL in Responsive fashion, based on
+									the excellent Foundaion framework by Zurb
 								<p>
 									<a href="">home page: click CREDITS in footer</a>
 							</li>
 							<li>
-								<p class="margin4">RETAIL: KURTIS /Cotton/Cotton:PLUS size/
-									Georgette/Linen
+								<p class="margin4">RETAIL: KURTIS /Cotton/Cotton:PLUS size/ Georgette/Linen
 								<p>
 									<a href="#/products/kurtis">Kurtis page</a>
 							</li>
@@ -500,18 +516,15 @@
 									<a href="#/products/HandloomKurtis">Handloom Kurtis page</a>
 							</li>
 							<li>
-								<p class="margin4">ACCESSORIES: Jewellery Semi Precious
-									stones
+								<p class="margin4">ACCESSORIES: Jewellery Semi Precious stones
 								<p>
 									<a href="#/products/jewellery">Jewellery page</a>
 							</li>
 							<li>
 								<p class="margin4">Visit our facebook page
 								<p>
-									<a
-										href="https://www.facebook.com/pages/Xtension/337105089720817"
-										target="_blank"
-									>Facebook page</a>
+									<a href="https://www.facebook.com/pages/Xtension/337105089720817" target="_blank">Facebook
+										page</a>
 							</li>
 						</ul>
 
@@ -525,16 +538,24 @@
 		<div id="footer">
 			<footer class="row">
 				<div class="large-5 hide-for-small columns">
-					<p class="footertext">Note: this website is best viewed in IE9+
-						or the latest versions of Chrome & Firefox. On dektop or mobile.</p>
+					<p class="footertext">Note: this website is best viewed in IE9+ or the latest
+						versions of Chrome & Firefox. On dektop or mobile.</p>
 				</div>
 				<div class="large-7 small-12 columns">
 					<div class="footerLeft">
 						<ul>
-							<li><a href="">HOME</a></li>
-							<li><a href="#/about">ABOUT US</a></li>
-							<li><a href="#/contact">CONTACT US</a></li>
-							<li><a data-dropdown="contentDrop">CREDITS</a></li>
+							<li>
+								<a href="">HOME</a>
+							</li>
+							<li>
+								<a href="#/about">ABOUT US</a>
+							</li>
+							<li>
+								<a href="#/contact">CONTACT US</a>
+							</li>
+							<li>
+								<a data-dropdown="contentDrop">CREDITS</a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -545,16 +566,13 @@
 	</div>
 
 	<!--#######  CREDITS ####### -->
-	<div id="contentDrop" class="f-dropdown content medium"
-		data-dropdown-content
-	>
+	<div id="contentDrop" class="f-dropdown content medium" data-dropdown-content>
 		<p>
-			Site was designed by NIGEL in <a
-				href="http://en.wikipedia.org/wiki/Responsive_web_design"
-				target="_blank"
-			>Responsive fashion</a> based on the excellent <a
-				href="http://foundation.zurb.com/" target="_blank"
-			> Foundaion framework by Zurb</a>
+			Site was designed by NIGEL in
+			<a href="http://en.wikipedia.org/wiki/Responsive_web_design" target="_blank">Responsive
+				fashion</a>
+			based on the excellent
+			<a href="http://foundation.zurb.com/" target="_blank"> Foundaion framework by Zurb</a>
 		</p>
 		<div class="credit-triangle"></div>
 	</div>

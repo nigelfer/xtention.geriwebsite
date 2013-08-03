@@ -446,6 +446,81 @@
             	"lazy": "true"
             }
         ]
+    },
+    "wholesaleCottonKurtis": {
+        "folderLocation": "img/wholesale/cottonKurtis/",
+        "productList": [
+            {
+                "img": "X-S-K-105.jpg",
+                "imgThumb": "X-S-K-105Thumb.jpg",
+                "lazy": "false"
+            },
+            {
+            	"img": "X-S-K-109.jpg",
+            	"imgThumb": "X-S-K-109Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-S-K-115.jpg",
+            	"imgThumb": "X-S-K-115Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-S-K-117.jpg",
+            	"imgThumb": "X-S-K-117Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-S-K-118.jpg",
+            	"imgThumb": "X-S-K-118Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-S-K-120.jpg",
+            	"imgThumb": "X-S-K-120Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-S-K-122.jpg",
+            	"imgThumb": "X-S-K-122Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-S-K-125.jpg",
+            	"imgThumb": "X-S-K-125Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-S-K-127.jpg",
+            	"imgThumb": "X-S-K-127Thumb.jpg",
+            	"lazy": "true"
+            },
+            {
+            	"img": "X-S-K-129.jpg",
+            	"imgThumb": "X-S-K-129Thumb.jpg",
+            	"lazy": "true"
+            },
+            {
+            	"img": "X-S-K-130.jpg",
+            	"imgThumb": "X-S-K-130Thumb.jpg",
+            	"lazy": "true"
+            },
+            {
+            	"img": "X-S-K-131.jpg",
+            	"imgThumb": "X-S-K-131Thumb.jpg",
+            	"lazy": "true"
+            },
+            {
+            	"img": "X-S-K-138.jpg",
+            	"imgThumb": "X-S-K-138Thumb.jpg",
+            	"lazy": "true"
+            },
+            {
+            	"img": "X-S-K-148.jpg",
+            	"imgThumb": "X-S-K-148Thumb.jpg",
+            	"lazy": "true"
+            }
+        ]
     }
     
 }

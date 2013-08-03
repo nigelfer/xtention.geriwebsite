@@ -28,6 +28,8 @@ $(function() {
 	$contact = $('#contact');
 	$search = $('#searchSection');
 	$anarkali = $('#products_anarkali_kurtis');
+	$wholeCottonKurtis = $('#products_wholesale_cotton_kurtis');
+	$wholeHandloomKurtis = $('#products_wholesale_handloom_kurtis');
 
 	var hideAll = function() {
 		$home.hide();
@@ -42,6 +44,8 @@ $(function() {
 		$search.hide();
 		$tops.hide();
 		$anarkali.hide();
+		$wholeCottonKurtis.hide();
+		$wholeHandloomKurtis.hide();
 	};
 
 	hideAll();
@@ -116,6 +120,22 @@ $(function() {
 		displayPageProducts('wholesaleAnarkaliKurtis',
 				'#products_anarkali_kurtis', 'Anarkali Kurtis');
 		$anarkali.stop(true, true).show();
+		searchShown = false;
+	});
+	$.History.bind('/products/CottonKurtis', function(state) {
+		hideAll();
+		closeMenu();
+		displayPageProducts('wholesaleCottonKurtis',
+				'#products_wholesale_cotton_kurtis', 'Cotton Kurtis');
+		$wholeCottonKurtis.stop(true, true).show();
+		searchShown = false;
+	});
+	$.History.bind('/products/HandloomKurtis', function(state) {
+		hideAll();
+		closeMenu();
+		displayPageProducts('handloomCottonKurtis',
+				'#products_wholesale_handloom_kurtis', 'Handloom Kurtis');
+		$wholeHandloomKurtis.stop(true, true).show();
 		searchShown = false;
 	});
 	$.History.bind('/products/tshirts', function(state) {

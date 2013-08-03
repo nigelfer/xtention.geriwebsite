@@ -10,15 +10,6 @@
 	
 }
 
-.hbg {
-	background-color: #444444;
-	border-left: 2em solid #933A93;
-}
-
-.hbg #bif {
-	margin-top: 0;
-}
-
 /* for the angled right side hader */
 .hbghead {
 	background-color: #444444;
@@ -43,25 +34,6 @@
 	color: white;
 }
 
-.top-bar {
-	margin-top: 5px;
-	margin-bottom: 5px !important;
-}
-
-div.large-3:nth-child(1)>h1:nth-child(1) {
-	margin-top: 4px !important;
-}
-
-.back_black {
-	background-color: #444444 !important;
-	border-left-style: solid;
-	border-left-width: 15px;
-	border-left-color: #bb52Ae;
-	-webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
-	-moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
-	box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
-}
-
 .color_white {
 	color: white !important;
 	font-weight: bold;
@@ -69,7 +41,6 @@ div.large-3:nth-child(1)>h1:nth-child(1) {
 }
 
 .inline {
-	/* 	display: inline; */
 	float: left;
 }
 
@@ -85,20 +56,13 @@ div.large-3:nth-child(1)>h1:nth-child(1) {
 	margin: 5px !important;
 }
 
-.round_corners {
-	border-radius: 80px;
-	border-color: transparent;
-	border-style: solid;
-	border-width: 1px;
+.top-bar {
+	margin-top: 5px;
+	margin-bottom: 5px !important;
 }
 
-.quote {
-	font-style: italic;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-weight: bold;
-	font-color: white;
-	color: white !important;
-	text-align: center;
+div.large-3:nth-child(1)>h1:nth-child(1) {
+	margin-top: 4px !important;
 }
 
 div.orbit-caption {
@@ -113,9 +77,9 @@ div.orbit-caption {
 	padding: 11px 11px;
 }
 
+/* SEARCH **/
 .text-input {
 	border-radius: 20px;
-	/*     margin-top: 9px !important; */
 	margin-bottom: 0 !important;
 	padding: 2px !important;
 	padding-left: 15px !important;
@@ -134,8 +98,19 @@ div.orbit-caption {
 	margin-bottom: 4px;
 }
 
-.button-group {
-	float: right !important;
+.clear-search {
+	font-size: 15px;
+	position: absolute;
+	top: 8px;
+	left: 4%;
+	/* 	opacity:0.9; */
+}
+
+#clear-search-id {
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	z-index: 5;
 }
 
 #fbimg {
@@ -154,7 +129,6 @@ footer {
 	padding-top: 2%;
 	font-size: .75em;
 	margin: 0px !important;
-	/* 	line-height: 0.8em; */
 }
 
 .footerLeft {
@@ -193,18 +167,12 @@ footer {
 	text-decoration: underline;
 }
 /* end footer */
-#topbartab {
-	width: 100%;
-	border: none;
-	margin: 0px;
-}
 
 /***** sticky footer *****/
 body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	/* 		font-family: "Open Sans Condensed", serif; */
 }
 
 #wrapper {
@@ -223,6 +191,8 @@ body {
 	width: 100%;
 }
 /***** sticky footer End *****/
+
+/* Contact details page */
 .contact {
 	width: 90%;
 	border-style: none;
@@ -242,8 +212,19 @@ body {
 	margin-bottom: 2px;
 }
 
+/* ABOUT page */
 #about p:FIRST-LETTER {
 	font-size: 2em;
+}
+
+.first-let {
+	font-variant: small-caps;
+}
+
+.first-let:FIRST-LETTER {
+	font-size: 2em;
+	font-weight: bold;
+	color: #933A93;
 }
 
 /* prevent page shift css-tricks.com
@@ -255,105 +236,29 @@ html {
 	overflow-y: scroll;
 }
 
-#logoh1 {
-	margin-bottom: 2px !important;
-}
-
-.menu-l2>a {
-	font-family: "Open Sans Condensed", serif !important;
-	font-weight: bold !important;
-	font-size: 1.1em !important;
-	padding: 2px !important;
-	border-style: none !important;
-	margin: 4px;
-}
-
-.menu-l2 a:hover {
-	color: #933A93 !important;
-}
-
-.semi-transparent {
-	opacity: 0.9;
-	border-top-color: #933A93 !important;
-	border-top-width: 2px;
-	border-top-style: dotted;
-	text-align: center;
-}
-
-.right-border {
-	border-right: black dotted thin;
-}
-
 .dropdown h3 {
 	color: #933A93;
 }
 
-.linearBg2 {
-	background-color: #F8F8F8;
-}
-
-.linearBg3 {
+.LINEAR_GRADIENT_EXAMPLE_ONE {
 	/* fallback */
 	background-color: #FFFFFF;
 	/*background: url(images/linear_bg_2.png);*/
 	background-repeat: repeat-x;
 	/* Safari 4-5, Chrome 1-9 */
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#A1A1A1),
-		to(#FFFFFF));
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF),
+		to(#E99FE9));
 	/* Safari 5.1, Chrome 10+ */
-	background: -webkit-linear-gradient(top, #FFFFFF, #A1A1A1);
+	background: -webkit-linear-gradient(top, #E99FE9, #FFF);
 	/* Firefox 3.6+ */
-	background: -moz-linear-gradient(top, #FFFFFF, #A1A1A1);
+	background: -moz-linear-gradient(top, #E99FE9, #FFF);
 	/* IE 10 */
-	background: -ms-linear-gradient(top, #FFFFFF, #A1A1A1);
+	background: -ms-linear-gradient(top, #E99FE9, #FFF);
 	/* Opera 11.10+ */
-	background: -o-linear-gradient(top, #FFFFFF, #A1A1A1);
+	background: -o-linear-gradient(top, #E99FE9, #FFF);
 }
 
-.align-cener {
-	text-align: center;
-}
-
-.invisible {
-	display: none;
-}
-
-.top-bar-style {
-	opacity: 0.9;
-	z-index: 200;
-}
-
-.purple-back {
-	background-color: #933A93 !important;
-}
-
-.blue-back {
-	background-color: #2ba6cb !important;
-}
-
-.top-bar-section ul {
-	background-color: transparent !important;
-	background: transparent !important;
-}
-
-.top-bar-section ul li {
-	background-color: transparent !important;
-	background: transparent !important;
-}
-
-.top-bar-section ul li>a {
-	color: #222 !important;
-}
-
-/* end top bar styling */
-.page-title {
-	color: white !important;
-	margin: 10px 0 15px 15px;
-	border-radius: 10px;
-	text-align: center;
-}
-
-.gradient_black_1 {
+.LINEAR_GRADIENT_EXAMPLE_TWO {
 	background: rgb(230, 230, 230); /* Old browsers */
 	background: -moz-linear-gradient(top, rgba(256, 256, 256, 1) 0%,
 		rgba(230, 230, 230, 1) 100%); /* FF3.6+ */
@@ -370,14 +275,46 @@ html {
 		rgba(230, 230, 230, 1) 100%); /* IE10+ */
 	background: linear-gradient(to bottom, rgba(256, 256, 256, 1) 0%,
 		rgba(230, 230, 230, 1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient(  
+	filter: progid:DXImageTransform.Microsoft.gradient(            
+		                     
 		                     
 		                     startColorstr='#4c4c4c', endColorstr='#131313',
 		GradientType=0); /* IE6-9 */
 }
 
-.gradient_black {
+/* product images */
+.align-cener {
+	text-align: center;
+}
+
+.invisible {
+	display: none;
+}
+
+/** MENU **/
+.top-bar-style {
+	opacity: 0.9;
+	z-index: 200;
+}
+
+.top-bar-section ul {
 	background-color: transparent !important;
+	background: transparent !important;
+}
+
+.top-bar-section ul li {
+	background-color: transparent !important;
+	background: transparent !important;
+}
+
+.top-bar-section ul li>a {
+	color: #222 !important;
+}
+
+.menu-sub-font {
+	font-family: "Open Sans Condensed", serif;
+	font-weight: bold !important;
+	font-size: 1.2em !important;
 }
 
 [class*="foundicon-"]:after {
@@ -389,21 +326,7 @@ html {
 	font-style: normal;
 }
 
-.clear-search {
-	font-size: 15px;
-	position: absolute;
-	top: 8px;
-	left: 4%;
-	/* 	opacity:0.9; */
-}
-
-#clear-search-id {
-	width: 15px;
-	height: 15px;
-	cursor: pointer;
-	z-index: 5;
-}
-
+/* 100% width */
 .full-row {
 	width: 95%;
 	margin: auto;
@@ -418,21 +341,11 @@ html {
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-.first-let {
-	font-variant: small-caps;
-}
-
-.first-let:FIRST-LETTER {
-	font-size: 2em;
-	font-weight: bold;
-	color: #933A93;
-}
-
 /* 
 	#############################  SPECIFIC for DESKTOPS  ###################### 
 */
 @media screen and (max-width: 2000px) and (min-width: 940px) {
-	/* 	top nav menu related  */
+	/**** 	MENU  ****/
 	.top-bar-section .dropdown li a {
 		background-color: #eee !important;
 		color: #111 !important;
@@ -444,20 +357,45 @@ html {
 		min-height: 40px !important;
 	}
 	.top-bar-section>ul>li>a:HOVER {
-		/* 	border-bottom: thick solid #933A93; */
 		color: #e99fd9;
+	}
+	.top-bar-section ul li>a {
+		background-color: transparent !important;
+		background: transparent !important;
+		/* 		color: #222 !important; */
 	}
 	.menu-top-font {
 		font-family: "Open Sans Condensed", serif;
 		font-weight: bold;
-		font-size: 1.5em !important;
+		font-size: 1.4em !important;
 	}
-	.menu-top-font>a:HOVER {
+	.menu-top-font:HOVER {
 		color: #933A93 !important;
 	}
-	.menu-sub-font {
-		font-weight: bold !important;
-		font-size: 1em !important;
+	/* for menu slide-down effect*/
+	.top-bar-section .dropdown {
+		max-height: 0px;
+		overflow: hidden;
+		opacity: 0;
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		opacity: 0;
+	}
+	.top-bar-section .has-dropdown:HOVER .dropdown {
+		max-height: 200px;
+		opacity: 1;
+		transition-delay: 0.1s;
+	}
+	.top-bar-section>ul>.divider,.top-bar-section>ul>[role="separator"] {
+		border-right: solid 1px silver !important;
+		border-left: none !important;
+		height: 35px !important;
+	}
+	.gradient_black {
+		background-color: transparent !important;
 	}
 
 	/* for the angled right side big in fashion box. */
@@ -471,7 +409,6 @@ html {
 	.hbg #bif {
 		margin-top: -5em !important;
 	}
-
 	/* for the angled right side hader */
 	.hbghead {
 		background-color: white !important;
@@ -485,41 +422,24 @@ html {
 		color: white;
 	}
 
-	/* for menu slide-down effect*/
-	.top-bar-section .dropdown {
-		max-height: 0px;
-		overflow: hidden;
-		opacity: 0;
-		-webkit-transition: all 0.4s ease-in-out;
-		-moz-transition: all 0.4s ease-in-out;
-		-ms-transition: all 0.4s ease-in-out;
-		-o-transition: all 0.4s ease-in-out;
-		transition: all 0.4s ease-in-out;
-		opacity: 0;
-	}
-	.top-bar-section .has-dropdown:HOVER .dropdown {
-		max-height: 200px;
-		opacity: 1;
-		transition-delay: 0.1s;
-	}
-
-	/* for images on hover style*/
+	/* for images on hover style. zoom effect */
 	img.prodimg {
-		-webkit-transition: all 0.5s ease-in;
-		-moz-transition: all 0.5s ease-in;
-		-ms-transition: all 0.5s ease-in;
-		-o-transition: all 0.5s ease-in;
-		transition: all 0.5s ease-in;
+		-webkit-transition: all 0.4s ease-in;
+		-moz-transition: all 0.4s ease-in;
+		-ms-transition: all 0.4s ease-in;
+		-o-transition: all 0.4s ease-in;
+		transition: all 0.4s ease-in;
 	}
 	img.prodimg:HOVER {
 		-webkit-transform: scale(1.3);
 		-moz-transform: scale(1.3);
 		transform: scale(1.3);
-		/* 		border: thick solid #933A93; */
 		-webkit-box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
 		-moz-box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
 		box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
 	}
+
+	/* Search slide effect */
 	#filter {
 		-webkit-transition: all 0.3s ease;
 		-moz-transition: all 0.3s ease;
@@ -528,8 +448,7 @@ html {
 		float: right;
 	}
 	#filter:FOCUS {
-		width: 200px;
-		/* 		left: -20px; */
+		width: 190px;
 	}
 
 	/* 	spotlight */
@@ -564,23 +483,14 @@ html {
 		border-width: 12px 8px 0 8px;
 		border-color: #ceecda transparent transparent transparent;
 	}
-	.top-bar-section>ul>.divider,.top-bar-section>ul>[role="separator"] {
-		border-right: solid 1px silver !important;
-		border-left: none !important;
-		/* 	border-style: inset !important; */
-		height: 35px !important;
-	}
-	.top-bar-section ul li>a {
-		background-color: transparent !important;
-		background: transparent !important;
-		color: #222 !important;
-	}
 }
 
 /* 
 	#####################  SPECIFIC TO TABLETS  / MOBILE #####################  
 */
 @media screen and (max-width: 939px) and (min-width: 50px) {
+	
+	/** FOOTER 	**/
 	.footerLeft {
 		padding-left: 2% !important;
 		float: right;
@@ -603,8 +513,6 @@ html {
 		padding-right: 1em;
 		padding-bottom: 0.5em;
 		padding-left: 1em;
-		/* 		font-size: 1em; */
-		/* 		background-color: #444444; */
 		background-color: #2ba6cb;
 		border-color: #999999;
 		color: white !important;
@@ -617,7 +525,6 @@ html {
 		padding-right: 2px !important;
 	}
 	.footerLeft ul li a:hover,.footerLeft ul li a:focus {
-		/* 		background-color: #777777; */
 		background-color: #2284a1;
 	}
 	.footerLeft ul li a:hover {
@@ -633,6 +540,8 @@ html {
 	#footer {
 		height: 110px !important;
 	}
+	
+	/* Anchors as buttons for mobile */
 	.mob-anchor {
 		border-style: solid;
 		border-width: 1px;
@@ -665,9 +574,16 @@ html {
 		border-width: 2px;
 	}
 
-	/* 	top nav menu related  
-    we want to be large enought to be clikable with finger 
-    and border around make it look nice. */
+	/** MENU **/
+	nav {
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+	}
+
+	/* we want to be large enought to be clikable with finger and border around make it look nice. */
 	.top-bar-section li a {
 		min-height: 45px !important;
 	}
@@ -695,6 +611,9 @@ html {
 	.top-bar.expanded .title-area {
 		background: rgb(210, 210, 210);
 	}
+	.top-bar.expanded {
+		background: rgb(210, 210, 210);
+	}
 	.top-bar.expanded .toggle-topbar a {
 		color: #222 !important;
 	}
@@ -705,24 +624,21 @@ html {
 			!important;
 	}
 	.top-bar-section .divider,.top-bar-section [role="separator"] {
-		/* 		border-bottom: solid 1px silver; */
 		border-bottom: none;
 		border-top: none;
 	}
-	.top-bar-section .dropdown li a {
-/* 		background: transparent !important; */
+	.top-bar-section .dropdown li a,.top-bar-section ul li>a {
+		font-weight: bold !important;
+		background: #FBBFFB !important;
 	}
-	nav {
-		-webkit-transition: all 0.4s ease-in-out;
-		-moz-transition: all 0.4s ease-in-out;
-		-ms-transition: all 0.4s ease-in-out;
-		-o-transition: all 0.4s ease-in-out;
-		transition: all 0.4s ease-in-out;
+	.top-bar-section .has-form {
+		padding: 8px;
+		background: #FBBFFB !important;
 	}
 	.top-bar.expanded {
-		height: 350px !important;
+		height: 400px !important;
 	}
-	.menu-top-font,.menu-sub-font {
+	.menu-top-font {
 		font-family: "Open Sans Condensed", serif;
 		font-weight: bold;
 		font-size: 1.2em !important;
@@ -732,22 +648,21 @@ html {
 		border-width: 1px;
 		cursor: pointer;
 		font-family: inherit;
-		font-weight: bold;
 		line-height: 1;
 		margin: 0 0 0.25em;
 		position: relative;
 		text-decoration: none;
 		text-align: center;
 		display: inline-block;
-		/* 		padding-top: 7px !important; */
-		/* 		padding-right: 0.5em !important; */
-		/* 		padding-bottom: 7px !important; */
-		/* 		padding-left: 0.5em !important; */
-		background: #FBBFFB !important;
 		border-color: #A88AA8;
 		color: white;
-		/* 		-webkit-border-radius: 1000px; */
-		/* 		border-radius: 1000px; */
 		width: 95%;
+	}
+	.gradient_black {
+		background-color: rgb(230, 230, 230) !important;
+	}
+	.js-generated a {
+		color: #222 !important;
+		font-size: 0.8em;
 	}
 }
