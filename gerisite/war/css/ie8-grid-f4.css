@@ -227,15 +227,56 @@
 #ie8menu {
 	outline: none;
 }
-#ie8menu LI {
-	float: left;
+
+#ie8menu LI,#ie8menu UL {
 	display: inline;
 }
-#ie8menu LI A {
+
+#ie8menu LI>A {
 	font-weight: bold;
 	border-right-style: solid;
-	border-right-color: gray;
-	border: 0 0.75 0 0;
-	padding: 0 4px 0 4px;
+	border-right-color: #DDD;
+	border: 0 0.5 0 0;
+	padding: 0 2px 0 2px;
 }
+
+#ie8menu .menu-icon,#ie8menu .ie8fb,#filter-count {
+	display: none;
+}
+
+#ie8menu .menu-sub-font,#ie8menu .menu-top-font {
+	font-size: 0.9em !important;
+}
+
+#ie8menu .ie8search {
+	display: inline;
+	width: 100%;
+	top: -70px;
+}
+
+#ie8menu .ie8search:before {
+	content: "Search";
+/* 	float: left; */
+	display: inline;
+}
+
+#filter-count {
+	visibility: hidden;
+}
+
+.ie8footer {
+	display: inline !important;
+	visibility: visible !important;
+}
+
+.ie8footer p {
+	font-weight: bold !important;
+	font-size: 1em !important;
+	color: red;
+}
+
+#ie8menu.searchul{
+	height :0px;
+}
+
 /* nav menu end */

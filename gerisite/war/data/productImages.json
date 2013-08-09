@@ -521,6 +521,46 @@
             	"lazy": "true"
             }
         ]
+    },
+    "handloomCottonKurtis": {
+        "folderLocation": "img/wholesale/handloomKurtis/",
+        "productList": [
+            {
+                "img": "X-S-K-133340.jpg",
+                "imgThumb": "X-S-K-133340Thumb.jpg",
+                "lazy": "false"
+            },
+            {
+            	"img": "X-S-K-134365.jpg",
+            	"imgThumb": "X-S-K-134365Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-S-K-137395.jpg",
+            	"imgThumb": "X-S-K-137395Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-S-K-140395.jpg",
+            	"imgThumb": "X-S-K-140395Thumb.jpg", 
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-S-K-146390.jpg",
+            	"imgThumb": "X-S-K-146390Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-S-K-147395.jpg",
+            	"imgThumb": "X-S-K-147395Thumb.jpg",
+            	"lazy": "false"
+            },
+            {
+            	"img": "X-S-K-151390.jpg",
+            	"imgThumb": "X-S-K-151390Thumb.jpg",
+            	"lazy": "false"
+            }
+        ]
     }
     
 }

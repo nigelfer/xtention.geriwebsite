@@ -48,6 +48,10 @@
 	text-align: right;
 }
 
+.orbit-next, .orbit-prev {
+	opacity : 0;
+}
+
 .align_left {
 	text-align: left;
 }
@@ -275,7 +279,7 @@ html {
 		rgba(230, 230, 230, 1) 100%); /* IE10+ */
 	background: linear-gradient(to bottom, rgba(256, 256, 256, 1) 0%,
 		rgba(230, 230, 230, 1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient(            
+	filter: progid:DXImageTransform.Microsoft.gradient(             
 		                     
 		                     
 		                     startColorstr='#4c4c4c', endColorstr='#131313',
@@ -285,6 +289,12 @@ html {
 /* product images */
 .align-cener {
 	text-align: center;
+}
+
+.align_img_center {
+	display: block;
+	margin-left: auto !important;
+	margin-right: auto !important;
 }
 
 .invisible {
@@ -328,7 +338,7 @@ html {
 
 /* 100% width */
 .full-row {
-	width: 95%;
+	width: 100%;
 	margin: auto;
 }
 
@@ -449,6 +459,8 @@ html {
 	}
 	#filter:FOCUS {
 		width: 190px;
+		border-color: #933A93;
+		border-width: 4px;
 	}
 
 	/* 	spotlight */
@@ -489,7 +501,6 @@ html {
 	#####################  SPECIFIC TO TABLETS  / MOBILE #####################  
 */
 @media screen and (max-width: 939px) and (min-width: 50px) {
-	
 	/** FOOTER 	**/
 	.footerLeft {
 		padding-left: 2% !important;
@@ -540,7 +551,7 @@ html {
 	#footer {
 		height: 110px !important;
 	}
-	
+
 	/* Anchors as buttons for mobile */
 	.mob-anchor {
 		border-style: solid;

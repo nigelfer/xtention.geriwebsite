@@ -245,6 +245,44 @@ $(function() {
 		});
 	});
 
+	var whatsNew = $('#whatsnew');
+	var butWhatsNew = $('#butwhatsnew');
+	$(butWhatsNew).click(function() {
+		$(whatsNew).slideToggle(300, function() {
+			if ($(this).is(":hidden"))
+				$(butWhatsNew).html("Show me Whats New!");
+			else
+				$(butWhatsNew).html("Hide Whats New");
+		});
+	});
+
+	// capture ctrl+f for find
+	$(window).bind('keydown', function(event) {
+		if (event.ctrlKey || event.metaKey) {
+			if (String.fromCharCode(event.which).toLowerCase() == 'f') {
+				event.preventDefault();
+				// alert('ctrl-f');
+				$("#filter").focus();
+			}
+		}
+	});
+
+	$(".orbit-container").mouseenter(function() {
+		$("a.orbit-prev").stop().animate({
+			'opacity' : '1'
+		}, 600);
+		$("a.orbit-next").stop().animate({
+			'opacity' : '1'
+		}, 600);
+	}).mouseleave(function() {
+		$("a.orbit-prev").stop().animate({
+			'opacity' : '0'
+		}, 600);
+		$("a.orbit-next").stop().animate({
+			'opacity' : '0'
+		}, 600);
+	});
+
 });
 
 function closeMenu() {
