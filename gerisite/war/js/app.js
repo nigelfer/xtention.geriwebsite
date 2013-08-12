@@ -11,10 +11,17 @@ $(function() {
 	 * ######## lazy load slideshow images ######## allows first page to load a
 	 * little faster.
 	 */
+
 	$("img.lazy").lazyload({
-		container : $("#slideshowContainer")
+		event : "sporty"			
 	});
 
+	$(window).bind("load", function() {
+		var timeout = setTimeout(function() {
+			$("img.lazy").trigger("sporty")
+		}, 3000);
+	});
+	
 	/* ######## hiding and showing the Different menu sections ######## */
 	$home = $('#home');
 	$about = $('#about');

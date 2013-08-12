@@ -48,8 +48,33 @@
 	text-align: right;
 }
 
+/* for orbit styles */
+div.orbit-caption {
+	text-align: center !important;
+}
+
+.orbit-container .orbit-prev,.orbit-container .orbit-next {
+	background-color: white !important;
+	border-radius : 1000px;
+	-webkit-border-radius: 1000px;
+	width: 45px;
+	height: 45px;	 
+}
+
+.orbit-container .orbit-prev>span {
+	border-right-color: #933A93 !important;
+}
+
+.orbit-container .orbit-next>span {
+	border-left-color: #933A93 !important;
+}
+
 .orbit-next, .orbit-prev {
 	opacity : 0;
+}
+
+div.orbit-caption {
+	text-align: center !important;
 }
 
 .align_left {
@@ -67,10 +92,6 @@
 
 div.large-3:nth-child(1)>h1:nth-child(1) {
 	margin-top: 4px !important;
-}
-
-div.orbit-caption {
-	text-align: center !important;
 }
 
 .panel {
@@ -217,15 +238,21 @@ body {
 }
 
 /* ABOUT page */
-#about p:FIRST-LETTER {
-	font-size: 2em;
-}
+/* #about p:FIRST-LETTER { */
+/* 	font-size: 2em; */
+/* } */
 
 .first-let {
 	font-variant: small-caps;
 }
 
 .first-let:FIRST-LETTER {
+	font-size: 2em;
+	font-weight: bold;
+	color: #933A93;
+}
+
+.first-let_only:FIRST-LETTER {
 	font-size: 2em;
 	font-weight: bold;
 	color: #933A93;
@@ -339,6 +366,11 @@ html {
 /* 100% width */
 .full-row {
 	width: 100%;
+	margin: auto;
+}
+
+.full-row-95 {
+	width: 95%;
 	margin: auto;
 }
 
